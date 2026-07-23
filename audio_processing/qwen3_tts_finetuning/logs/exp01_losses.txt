@@ -1,0 +1,15 @@
+Epoch 0 | Step 0 | Loss: 13.6357
+Epoch 0 | Step 10 | Loss: 13.6513
+Epoch 0 | Step 20 | Loss: 11.9782
+Epoch 0 | Step 30 | Loss: 12.7955
+Epoch 0 | Step 40 | Loss: 11.0931
+Epoch 1 | Step 0 | Loss: 10.9201
+Epoch 1 | Step 10 | Loss: 11.2084
+Epoch 1 | Step 20 | Loss: 10.2244
+Epoch 1 | Step 30 | Loss: 10.1893
+Epoch 1 | Step 40 | Loss: 8.9955
+Epoch 2 | Step 0 | Loss: 9.2504
+Epoch 2 | Step 10 | Loss: 9.4519
+Epoch 2 | Step 20 | Loss: 8.4935
+Epoch 2 | Step 30 | Loss: 8.2761
+Epoch 2 | Step 40 | Loss: 7.9727

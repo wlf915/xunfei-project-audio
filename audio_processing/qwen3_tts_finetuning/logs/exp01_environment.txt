@@ -1,0 +1,18 @@
+===== DATE =====
+Thu Jul 23 12:34:01 CST 2026
+===== GPU =====
+name, memory.total [MiB], driver_version
+NVIDIA A800-SXM4-80GB, 81920 MiB, 580.126.09
+===== PYTHON =====
+Python 3.12.13
+===== TORCH =====
+torch: 2.6.0+cu124
+torch CUDA: 12.4
+flash_attn: 2.8.3.post1
+transformers: 4.57.3
+GPU: NVIDIA A800-SXM4-80GB
+BF16: True
+===== QWEN3-TTS COMMIT =====
+022e286b98fbec7e1e916cb940cdf532cd9f488e
+===== TRAIN DATA =====
+90 data/processed/train_with_codes.jsonl
