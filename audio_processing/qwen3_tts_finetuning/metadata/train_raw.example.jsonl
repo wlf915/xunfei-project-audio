@@ -1,0 +1,2 @@
+{"audio":"data/wavs/001.wav","text":"这里是一条示例训练文本。","ref_audio":"data/reference/ref_speaker.wav"}
+{"audio":"data/wavs/002.wav","text":"这里是第二条示例训练文本。","ref_audio":"data/reference/ref_speaker.wav"}
