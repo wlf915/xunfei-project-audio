@@ -1,359 +1,224 @@
 #!/usr/bin/env python3
 """
-Phase 4: 构建实验分组 —— 基于质检结果生成多组训练 JSONL
+Phase 4: 构建双轮实验分组 — v1/v2/混合 共 14 组消融实验
 
-6 组消融实验（R1 = 第一轮自拟数据）：
-  exp00_baseline_r1  原始 100 条，未清洗，训练集 90 / 测试集 10
-  exp01_clean30_r1   预处理后 A/B 级 Top-30，训练 30
-  exp02_clean50_r1   预处理后 A/B 级 Top-50，训练 50
-  exp03_clean80_r1   预处理后过滤 C 级，训练 ~80
-  exp04_aug50_r1     clean50 + 语速/音高增强，训练 ~50+增强
-  exp05_full_clean   clean80（最大规模清洗后全量），训练 ~80
-
-统一变量：
-  - test_set: 编号能被 10 整除的 10 条（固定不变）
-  - ref_audio: 统一使用质量最高的 A 级样本作为 ref_audio
-  - audio 路径相对于 data/ 目录
+用法: python build_experiments.py [v1|v2|all]
+  v1   — 仅重建 R1 6组
+  v2   — 仅重建 R2 6组
+  all  — 双轮 + 混合 (默认)
 """
 
-import os
-import re
-import json
+import re, json, sys
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-QUALITY_REPORT = BASE_DIR / "reports" / "quality_report_asr.json"
-TEXT_FILE = BASE_DIR / "metadata" / "text.txt"
 EXPERIMENTS_DIR = BASE_DIR / "experiments"
 
-# 路径约定
-WAVS_ORIGINAL = "data/wavs"       # 相对于项目根目录
-WAVS_CLEAN = "data/wavs_clean"
-WAVS_AUG = "data/wavs_augmented"
+V1 = {
+    "text_file": BASE_DIR / "metadata" / "text.txt",
+    "quality_report": BASE_DIR / "reports" / "quality_report_asr_v1.json",
+    "aug_meta": BASE_DIR / "reports" / "augment_meta_v1.json",
+    "wav_raw": "data/wavs", "wav_clean": "data/wavs_clean", "wav_aug": "data/wavs_augmented",
+    "round_label": "R1(自拟)", "prefix": "r1",
+}
+V2 = {
+    "text_file": BASE_DIR / "metadata" / "text_v2.txt",
+    "quality_report": BASE_DIR / "reports" / "quality_report_asr_v2.json",
+    "aug_meta": BASE_DIR / "reports" / "augment_meta_v2.json",
+    "wav_raw": "data/wavs_v2", "wav_clean": "data/wavs_v2_clean", "wav_aug": "data/wavs_v2_augmented",
+    "round_label": "R2(标贝)", "prefix": "r2",
+}
 
 
-def load_text(text_path: Path) -> dict[str, str]:
-    mapping = {}
-    with open(text_path, encoding="utf-8") as f:
-        for line in f:
-            line = line.strip()
-            if not line:
-                continue
-            m = re.match(r"^(\d+)\s+(.+)$", line)
-            if m:
-                mapping[m.group(1)] = m.group(2)
-    return mapping
+def load_text(path): m = {}; [m.__setitem__(g.group(1), g.group(2)) for g in [
+    re.match(r"^(\d+)\s+(.+)$", l) for l in [l.strip() for l in open(path, encoding="utf-8")] if l] if g]; return m
 
 
-def is_test_sample(text_id: str) -> bool:
-    """编号能被 10 整除的作为测试集"""
-    num = int(text_id)
-    return num % 10 == 0
+def is_test(tid): return int(tid) % 10 == 0
 
 
-def load_quality_report() -> dict:
-    """加载质检报告，返回 {text_id → sample_info} 的索引"""
-    if not QUALITY_REPORT.exists():
-        return {}
-    with open(QUALITY_REPORT, encoding="utf-8") as f:
-        report = json.load(f)
-    index = {}
-    for s in report.get("samples", []):
-        index[s["text_id"]] = s
-    return index
+def load_quality(path):
+    if not path.exists(): return {}
+    with open(path, encoding="utf-8") as f: report = json.load(f)
+    return {s["text_id"]: s for s in report.get("samples", [])}
 
 
-def select_ref_audio(quality_index: dict, text_map: dict) -> tuple[str, str]:
-    """从 A 级样本中选择最佳参考音频：CER 最低 + 时长适中"""
-    a_samples = [
-        (tid, q) for tid, q in quality_index.items()
-        if q["grade"] == "A" and 3.0 <= q["duration_sec"] <= 6.0
-    ]
+def load_aug_map(path):
+    if not path.exists(): return {}
+    with open(path, encoding="utf-8") as f: meta = json.load(f)
+    m = {}
+    for e in meta.get("entries", []):
+        m[e["orig_stem"]] = e.get("augmented", [])
+    return m
+
+
+def select_ref(quality_index, text_map, cfg):
+    """选最佳参考音频: A级、CER最低"""
+    a_samples = []
+    for tid, q in quality_index.items():
+        if tid not in text_map: continue
+        if q.get("grade") == "A" and 3.0 <= q.get("duration_sec", 0) <= 6.0:
+            a_samples.append((tid, q))
     if not a_samples:
-        # 降级到 B 级
-        a_samples = [
-            (tid, q) for tid, q in quality_index.items()
-            if q["grade"] in ("A", "B") and 2.5 <= q["duration_sec"] <= 7.0
-        ]
+        a_samples = [(tid, q) for tid, q in quality_index.items()
+                     if tid in text_map and q.get("grade") in ("A", "B") and q.get("duration_sec", 1) > 0]
     if not a_samples:
-        # 随便选一个
-        a_samples = [(tid, q) for tid, q in quality_index.items()]
-
-    # 按质量分数排序，选最好的（兼容 cer 和 score 两种报告格式）
+        # fallback
+        ref_stem = "001"; ref_path = f"{cfg['wav_clean']}/{ref_stem}.wav"
+        return ref_path, text_map.get(f"{int(ref_stem):06d}", "")
     sort_key = "cer" if "cer" in a_samples[0][1] else "score"
     a_samples.sort(key=lambda x: x[1][sort_key], reverse=(sort_key == "score"))
-    best_tid = a_samples[0][0]
-    best_stem = str(int(best_tid)).zfill(3)
-    ref_path = f"{WAVS_CLEAN}/{best_stem}.wav"
-    ref_text = text_map.get(best_tid, "")
-    return ref_path, ref_text
+    best_tid = a_samples[0][0]; best_stem = str(int(best_tid)).zfill(3)
+    return f"{cfg['wav_clean']}/{best_stem}.wav", text_map.get(best_tid, "")
 
 
-def build_jsonl(
-    exp_name: str,
-    sample_ids: list[str],
-    text_map: dict[str, str],
-    wav_dir: str,
-    ref_audio: str,
-    output_path: Path,
-):
-    """为指定样本 ID 列表生成训练 JSONL"""
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-    with open(output_path, "w", encoding="utf-8") as f:
-        for text_id in sorted(sample_ids, key=lambda x: int(x)):
-            stem = str(int(text_id)).zfill(3)
-            text = text_map.get(text_id, "")
-            record = {
-                "audio": f"{wav_dir}/{stem}.wav",
-                "text": text,
-                "ref_audio": ref_audio,
-            }
-            f.write(json.dumps(record, ensure_ascii=False) + "\n")
-    return output_path
+def write_jsonl(path, records):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with open(path, "w", encoding="utf-8") as f:
+        for r in records: f.write(json.dumps(r, ensure_ascii=False) + "\n")
 
 
-def build_jsonl_with_aug(
-    exp_name: str,
-    clean_ids: list[str],
-    text_map: dict[str, str],
-    ref_audio: str,
-    aug_meta_path: Path,
-    output_path: Path,
-):
-    """构建含增强样本的训练 JSONL（原始 clean + 增强变体）"""
-    # 先加原始 clean 样本
-    output_path.parent.mkdir(parents=True, exist_ok=True)
+def build_round(cfg, exp_offset, round_name):
+    """为一个数据轮生成 6 组实验 JSONL，返回 summary"""
+    text_map = load_text(cfg["text_file"])
+    quality_index = load_quality(cfg["quality_report"])
+    aug_map = load_aug_map(cfg["aug_meta"])
 
-    # 读取增强元数据
-    aug_map = {}  # stem → list of variant entries
-    if aug_meta_path.exists():
-        with open(aug_meta_path, encoding="utf-8") as f:
-            aug_meta = json.load(f)
-        for entry in aug_meta["entries"]:
-            aug_map[entry["orig_stem"]] = entry["augmented"]
+    all_ids = sorted(text_map.keys())
+    train_ids = [tid for tid in all_ids if not is_test(tid)]
+    test_ids = [tid for tid in all_ids if is_test(tid)]
 
-    records = []
-    for text_id in sorted(clean_ids, key=lambda x: int(x)):
-        stem = str(int(text_id)).zfill(3)
-        text = text_map.get(text_id, "")
+    ref_audio_rel, ref_text = select_ref(quality_index, text_map, cfg)
 
-        # 原始 clean 版本
-        records.append({
-            "audio": f"{WAVS_CLEAN}/{stem}.wav",
-            "text": text,
-            "ref_audio": ref_audio,
-        })
+    # 按质量排序，过滤 C 级
+    if quality_index:
+        sort_key = "cer" if "cer" in next(iter(quality_index.values())) else "score"
+        reverse = (sort_key == "score")
+        ranked = sorted(
+            [(tid, quality_index[tid]) for tid in train_ids if tid in quality_index],
+            key=lambda x: x[1][sort_key], reverse=reverse)
+        clean_ids = [tid for tid, _ in ranked if quality_index[tid].get("grade") in ("A", "B")]
+        sorted_ids = [tid for tid, _ in ranked]
+    else:
+        clean_ids = train_ids; sorted_ids = train_ids
 
-        # 增强版本
-        if stem in aug_map:
-            for variant in aug_map[stem]:
-                records.append({
-                    "audio": f"{WAVS_AUG}/{variant['filename']}",
-                    "text": text,
-                    "ref_audio": ref_audio,
-                })
+    top30 = clean_ids[:min(30, len(clean_ids))]
+    top50 = clean_ids[:min(50, len(clean_ids))]
+    top80 = clean_ids[:min(80, len(clean_ids))]
 
-    with open(output_path, "w", encoding="utf-8") as f:
-        for r in records:
-            f.write(json.dumps(r, ensure_ascii=False) + "\n")
+    experiments = {
+        f"{cfg['prefix']}_{exp_offset:02d}_baseline": (train_ids, cfg["wav_raw"], False, f"{round_name} 基线(原始)"),
+        f"{cfg['prefix']}_{exp_offset+1:02d}_clean30": (top30, cfg["wav_clean"], False, f"{round_name} Clean-30"),
+        f"{cfg['prefix']}_{exp_offset+2:02d}_clean50": (top50, cfg["wav_clean"], False, f"{round_name} Clean-50"),
+        f"{cfg['prefix']}_{exp_offset+3:02d}_clean80": (top80, cfg["wav_clean"], False, f"{round_name} Clean-80"),
+        f"{cfg['prefix']}_{exp_offset+4:02d}_aug50":   (top50, cfg["wav_clean"], True,  f"{round_name} Aug-50"),
+        f"{cfg['prefix']}_{exp_offset+5:02d}_full_clean": (clean_ids, cfg["wav_clean"], False, f"{round_name} Full-Clean"),
+    }
 
-    return output_path, len(records)
+    summary = {}
+    for exp_name, (tids, wav_dir, use_aug, desc) in experiments.items():
+        exp_dir = EXPERIMENTS_DIR / exp_name
+        records = []
+        for tid in sorted(tids, key=lambda x: int(x)):
+            stem = str(int(tid)).zfill(3); text = text_map.get(tid, "")
+            records.append({"audio": f"{wav_dir}/{stem}.wav", "text": text, "ref_audio": ref_audio_rel})
+            if use_aug and stem in aug_map:
+                for v in aug_map[stem]:
+                    records.append({"audio": f"{cfg['wav_aug']}/{v['filename']}", "text": text, "ref_audio": ref_audio_rel})
+
+        write_jsonl(exp_dir / "train_raw.jsonl", records)
+        # test set — 用 clean wav，不存在时回退 raw
+        test_wav_dir = cfg["wav_clean"] if (BASE_DIR / cfg["wav_clean"].split("/", 1)[1]).exists() else cfg["wav_raw"]
+        test_records = [{"audio": f"{test_wav_dir}/{str(int(tid)).zfill(3)}.wav", "text": text_map.get(tid, ""), "ref_audio": ref_audio_rel} for tid in sorted(test_ids, key=lambda x: int(x))]
+        write_jsonl(exp_dir / "test_raw.jsonl", test_records)
+
+        summary[exp_name] = {"desc": desc, "train": len(records), "test": len(test_ids)}
+        print(f"  {exp_name}: train={len(records)} test={len(test_ids)}  ref={ref_audio_rel.split('/')[-1]}")
+
+    return summary, ref_audio_rel, ref_text, text_map, quality_index, clean_ids, test_ids, top50
+
+
+def build_mixed(v1_cfg, v2_cfg, v1_clean, v2_clean, test_ids, v1_map, v2_map, v1_ref, v2_ref):
+    """构建 v1+v2 混合实验"""
+    summary = {}
+
+    # Mixed-1: v1 Top-25 + v2 Top-25（不同轮次数据，即使 ID 重叠也保留）
+    # 用 (round, tid) 区分
+    test_ids_r1 = [tid for tid in sorted(v1_map.keys()) if is_test(tid)]
+    test_recs = [{"audio": f"{v1_cfg['wav_clean']}/{str(int(tid)).zfill(3)}.wav", "text": v1_map.get(tid, ""), "ref_audio": v1_ref} for tid in test_ids_r1]
+
+    for mixed_name, v1_ids, v2_ids in [
+        ("mixed_01_top50", v1_clean[:25], v2_clean[:25]),
+        ("mixed_02_all", v1_clean, v2_clean),
+    ]:
+        records = []
+        seen = set()
+        # v1 entries
+        for tid in v1_ids:
+            stem = str(int(tid)).zfill(3); text = v1_map[tid]
+            wav = f"{v1_cfg['wav_clean']}/{stem}.wav"
+            records.append({"audio": wav, "text": text, "ref_audio": v1_ref})
+            seen.add(("v1", tid))
+        # v2 entries（独立加入，即使 ID 重复也是不同文本）
+        for tid in v2_ids:
+            stem = str(int(tid)).zfill(3); text = v2_map.get(tid, "")
+            wav = f"{v2_cfg['wav_clean']}/{stem}.wav"
+            records.append({"audio": wav, "text": text, "ref_audio": v2_ref})
+        exp_dir = EXPERIMENTS_DIR / mixed_name
+        write_jsonl(exp_dir / "train_raw.jsonl", records)
+        write_jsonl(exp_dir / "test_raw.jsonl", test_recs)
+        desc = ("混合 Top-50 (R1-25+R2-25)" if "top50" in mixed_name
+                else f"混合全量 A/B (R1×{len(v1_ids)}+R2×{len(v2_ids)})={len(records)}条")
+        summary[mixed_name] = {"desc": desc, "train": len(records), "test": len(test_ids_r1)}
+        print(f"  {mixed_name}: train={len(records)} test={len(test_ids_r1)}")
+
+    return summary
 
 
 def main():
-    print("=" * 60)
-    print("Phase 4: 构建实验分组 JSONL")
-    print("=" * 60)
+    mode = sys.argv[1] if len(sys.argv) > 1 else "all"
+    EXPERIMENTS_DIR.mkdir(parents=True, exist_ok=True)
 
-    text_map = load_text(TEXT_FILE)
-    print(f"文本映射: {len(text_map)} 条")
+    all_summary = {}
+    v1_clean, v2_clean, test_ids, v1_map, v2_map, v1_ref, v2_ref = None, None, None, None, None, None, None
 
-    quality_index = load_quality_report()
-    has_quality = len(quality_index) > 0
-    print(f"质检数据: {'可用' if has_quality else '不可用（将按默认规则分组）'}")
+    if mode in ("v1", "all"):
+        print(f"=== R1 实验分组 ===")
+        s1, v1_ref, _, v1_map, v1_qi, v1_clean, test_ids, v1_top50 = build_round(V1, 0, "R1(自拟)")
+        all_summary.update(s1)
+        # gen top50 IDs for v1
+        top50_file = BASE_DIR / "metadata" / "top50_ids_v1.txt"
+        with open(top50_file, "w") as f:
+            for tid in v1_top50: f.write(tid + "\n")
 
-    # ── 选择参考音频 ────────────────────────────────────────
-    if has_quality:
-        ref_audio, ref_text = select_ref_audio(quality_index, text_map)
-    else:
-        # 默认用 001.wav
-        ref_audio = f"{WAVS_CLEAN}/001.wav"
-        ref_text = text_map.get("000001", "")
+    if mode in ("v2", "all"):
+        print(f"\n=== R2 实验分组 ===")
+        s2, v2_ref, _, v2_map, v2_qi, v2_clean, _, v2_top50 = build_round(V2, 10, "R2(标贝)")
+        all_summary.update(s2)
+        top50_file = BASE_DIR / "metadata" / "top50_ids_v2.txt"
+        with open(top50_file, "w") as f:
+            for tid in v2_top50: f.write(tid + "\n")
+        if mode == "v2": test_ids = [tid for tid in sorted(v2_map.keys()) if is_test(tid)]
 
-    ref_stem = Path(ref_audio).stem
-    print(f"参考音频 (ref_audio): {ref_audio}")
-    print(f"参考文本: {ref_text[:40]}...")
+    if mode == "all" and v1_clean is not None and v2_clean is not None:
+        print(f"\n=== 混合实验分组 ===")
+        # R1 test_ids 和 R2 test_ids 可能不同，统一用 R1 的
+        test_ids_r1 = [tid for tid in sorted(v1_map.keys()) if is_test(tid)]
+        s3 = build_mixed(V1, V2, v1_clean, v2_clean, test_ids_r1, v1_map, v2_map, v1_ref, v2_ref)
+        all_summary.update(s3)
 
-    # ── 划分训练/测试 ───────────────────────────────────────
-    all_ids = []
-    # text.txt 里的 ID 是六位 "000001" 格式
-    for tid in text_map:
-        all_ids.append(tid)
-    all_ids.sort()
-
-    train_ids_all = [tid for tid in all_ids if not is_test_sample(tid)]
-    test_ids = [tid for tid in all_ids if is_test_sample(tid)]
-
-    print(f"全量样本: {len(all_ids)} (训练 {len(train_ids_all)} + 测试 {len(test_ids)})")
-    print(f"测试集 IDs: {', '.join(test_ids)}")
-
-    # ── 按质量排序（用于筛选） ────────────────────────────────
-    if has_quality:
-        # 确定排序字段（兼容 cer 和 score 两种报告格式）
-        sample0 = next(iter(quality_index.values()))
-        sort_field = "cer" if "cer" in sample0 else "score"
-        sort_reverse = (sort_field == "score")  # score 越高越好，cer 越低越好
-
-        train_quality = [
-            (tid, quality_index[tid])
-            for tid in train_ids_all
-            if tid in quality_index
-        ]
-        train_quality.sort(key=lambda x: x[1][sort_field], reverse=sort_reverse)
-
-        # 过滤 C 级
-        train_ab = [(tid, q) for tid, q in train_quality if q["grade"] in ("A", "B")]
-        train_clean_ids = [tid for tid, _ in train_ab]
-        train_sorted_ids = [tid for tid, _ in train_quality]  # 包括 C 级
-    else:
-        train_clean_ids = train_ids_all
-        train_sorted_ids = train_ids_all
-
-    N_clean = len(train_clean_ids)
-    print(f"训练集 A/B 级（可入选实验）: {N_clean}")
-    print(f"  A 级: {sum(1 for tid in train_clean_ids if quality_index.get(tid, {}).get('grade') == 'A') if has_quality else 'N/A'}")
-    print(f"  B 级: {sum(1 for tid in train_clean_ids if quality_index.get(tid, {}).get('grade') == 'B') if has_quality else 'N/A'}")
-
-    # ── 构建 6 组实验 ────────────────────────────────────────
-    experiments = {}
-
-    # exp00: Baseline-R1（原始未清洗数据）
-    experiments["exp00_baseline_r1"] = {
-        "description": "Baseline-R1: 原始100条未清洗，训练90/测试10",
-        "train_ids": train_ids_all,
-        "test_ids": test_ids,
-        "wav_dir": WAVS_ORIGINAL,
-        "use_aug": False,
-    }
-
-    # exp01: Clean-30（Top-30 A/B 级）
-    top30 = train_clean_ids[:30] if len(train_clean_ids) >= 30 else train_clean_ids
-    experiments["exp01_clean30_r1"] = {
-        "description": "Clean-30: 预处理后质量最优30条（A/B级）",
-        "train_ids": top30,
-        "test_ids": test_ids,
-        "wav_dir": WAVS_CLEAN,
-        "use_aug": False,
-    }
-
-    # exp02: Clean-50（Top-50 A/B 级）
-    top50 = train_clean_ids[:50] if len(train_clean_ids) >= 50 else train_clean_ids
-    experiments["exp02_clean50_r1"] = {
-        "description": "Clean-50: 预处理后质量最优50条（A/B级）",
-        "train_ids": top50,
-        "test_ids": test_ids,
-        "wav_dir": WAVS_CLEAN,
-        "use_aug": False,
-    }
-
-    # exp03: Clean-80（过滤 C 级后的全量）
-    top80 = train_clean_ids[:80] if len(train_clean_ids) >= 80 else train_clean_ids
-    experiments["exp03_clean80_r1"] = {
-        "description": f"Clean-80: 预处理后过滤C级，训练{len(top80)}条",
-        "train_ids": top80,
-        "test_ids": test_ids,
-        "wav_dir": WAVS_CLEAN,
-        "use_aug": False,
-    }
-
-    # exp04: Aug-50（clean50 + 语速/音高增强）
-    experiments["exp04_aug50_r1"] = {
-        "description": "Aug-50: clean50 + 语速±10% + 音高±50Hz增强",
-        "train_ids": top50,
-        "test_ids": test_ids,
-        "wav_dir": WAVS_CLEAN,
-        "use_aug": True,
-    }
-
-    # exp05: Full-Clean（全量清洗后，过滤 C 级）
-    experiments["exp05_full_clean"] = {
-        "description": f"Full-Clean: 全量{len(train_clean_ids)}条清洗+过滤C级后训练",
-        "train_ids": train_clean_ids,
-        "test_ids": test_ids,
-        "wav_dir": WAVS_CLEAN,
-        "use_aug": False,
-    }
-
-    # ── 生成 JSONL 文件 ──────────────────────────────────────
-    aug_meta_path = BASE_DIR / "reports" / "augment_meta.json"
-
-    print(f"\n{'─' * 60}")
-    print(f"生成实验 JSONL 文件:")
-    print(f"{'─' * 60}")
-
-    summary = {}
-
-    for exp_name in [
-        "exp00_baseline_r1", "exp01_clean30_r1", "exp02_clean50_r1",
-        "exp03_clean80_r1", "exp04_aug50_r1", "exp05_full_clean"
-    ]:
-        cfg = experiments[exp_name]
-        exp_dir = EXPERIMENTS_DIR / exp_name
-        output_train = exp_dir / "train_raw.jsonl"
-        output_test = exp_dir / "test_raw.jsonl"
-
-        train_ids = cfg["train_ids"]
-        test_ids = cfg["test_ids"]
-        wav_dir = cfg["wav_dir"]
-
-        if cfg["use_aug"]:
-            build_path, train_count = build_jsonl_with_aug(
-                exp_name, train_ids, text_map, ref_audio, aug_meta_path, output_train
-            )
-        else:
-            build_jsonl(exp_name, train_ids, text_map, wav_dir, ref_audio, output_train)
-            train_count = len(train_ids)
-
-        # 测试集用 clean wav（若无则 fallback 到原始）
-        test_wav_dir = WAVS_CLEAN if (BASE_DIR / "wavs_clean").exists() else WAVS_ORIGINAL
-        build_jsonl(
-            f"{exp_name}_test", test_ids, text_map, test_wav_dir, ref_audio, output_test
-        )
-
-        summary[exp_name] = {
-            "description": cfg["description"],
-            "n_train": train_count,
-            "n_test": len(test_ids),
-            "wav_dir": wav_dir if not cfg["use_aug"] else f"{WAVS_CLEAN} + {WAVS_AUG}",
-            "ref_audio": ref_audio,
-            "train_jsonl": str(output_train),
-            "test_jsonl": str(output_test),
-        }
-
-        print(f"  {exp_name}: train={train_count}, test={len(test_ids)} → {output_train}")
-
-    # ── 保存汇总 ──────────────────────────────────────────────
+    # 保存汇总
     summary_path = EXPERIMENTS_DIR / "experiments_summary.json"
     with open(summary_path, "w", encoding="utf-8") as f:
-        json.dump({
-            "ref_audio": ref_audio,
-            "ref_text": ref_text,
-            "test_ids": test_ids,
-            "experiments": summary,
-        }, f, ensure_ascii=False, indent=2)
+        json.dump(all_summary, f, ensure_ascii=False, indent=2)
 
-    print(f"\n{'=' * 60}")
-    print(f"实验分组完成！汇总: {summary_path}")
-    print(f"{'=' * 60}")
-
-    # ── 输出实验对照表 ────────────────────────────────────────
-    print(f"\n  实验对照表:")
-    print(f"  {'实验组':<22s} {'训练集':>6s} {'测试集':>6s} {'数据源':<30s}")
-    print(f"  {'─'*22} {'─'*6} {'─'*6} {'─'*30}")
-    for exp_name, s in summary.items():
-        print(f"  {exp_name:<22s} {s['n_train']:>6d} {s['n_test']:>6d} {s['wav_dir']:<30s}")
-
-    print(f"\n  下一步: 在每个实验目录运行 prepare_data.py 提取 audio_codes，然后 sft_12hz.py 训练")
+    print(f"\n{'='*60}")
+    print(f"实验分组完成! 共 {len(all_summary)} 组")
+    print(f"{'实验组':<30s} {'训练':>6s} {'测试':>6s} {'说明'}")
+    print(f"{'─'*30} {'─'*6} {'─'*6} {'─'*40}")
+    for name, s in all_summary.items():
+        print(f"  {name:<28s} {s['train']:>6d} {s['test']:>6d} {s['desc']}")
+    print(f"\n汇总: {summary_path}")
 
 
 if __name__ == "__main__":

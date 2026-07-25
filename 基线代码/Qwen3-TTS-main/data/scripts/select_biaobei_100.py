@@ -20,9 +20,11 @@ from pathlib import Path
 # 路径
 BIAOBEI_PROSO = "/Users/wlf/Downloads/BZNSYP/ProsodyLabeling/000001-010000.txt"
 BIAOBEI_WAVE = "/Users/wlf/Downloads/BZNSYP/Wave"
-ROUND1_TEXT = os.path.join(os.path.dirname(__file__), "text.txt")
-OUTPUT = os.path.join(os.path.dirname(__file__), "text_v2.txt")
-OUTPUT_META = os.path.join(os.path.dirname(__file__), "text_v2_meta.json")
+# 脚本在 data/scripts/ → metadata/ 在 data/metadata/
+_METADATA_DIR = os.path.join(os.path.dirname(__file__), "..", "metadata")
+ROUND1_TEXT = os.path.join(_METADATA_DIR, "text.txt")
+OUTPUT = os.path.join(_METADATA_DIR, "text_v2.txt")
+OUTPUT_META = os.path.join(_METADATA_DIR, "text_v2_meta.json")
 
 random.seed(426)
 

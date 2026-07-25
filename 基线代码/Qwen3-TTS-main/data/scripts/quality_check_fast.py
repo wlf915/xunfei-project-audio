@@ -21,7 +21,7 @@ import soundfile as sf
 BASE_DIR = Path(__file__).resolve().parent.parent
 INPUT_DIR = BASE_DIR / "wavs_clean"   # Phase 1 预处理后
 FALLBACK_DIR = BASE_DIR / "wavs"       # 回退
-TEXT_FILE = BASE_DIR / "text.txt"
+TEXT_FILE = BASE_DIR / "metadata" / "text.txt"
 
 
 def load_text(text_path: Path) -> dict[str, str]:
@@ -274,7 +274,7 @@ def main():
         "samples": sorted(results, key=lambda x: x["score"], reverse=True),
     }
 
-    report_path = BASE_DIR / "quality_report.json"
+    report_path = BASE_DIR / "reports" / "quality_report_fast.json"
     with open(report_path, "w", encoding="utf-8") as f:
         json.dump(report, f, ensure_ascii=False, indent=2, default=lambda o: float(o) if hasattr(o, "item") else str(o))
     print(f"\n  质量报告: {report_path}")

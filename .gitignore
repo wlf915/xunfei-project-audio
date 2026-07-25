@@ -175,7 +175,9 @@ Desktop.ini
 # 原始录音 + 转换产物均保留
 # 预处理 + 增强 不提交
 **/data/wavs_clean/
+**/data/wavs_v2_clean/
 **/data/wavs_augmented/
+**/data/wavs_v2_augmented/
 
 # ── Pipeline 生成文件 ─────────────────────────────────────────────────────────
 # 实验分组 JSONL
@@ -185,7 +187,7 @@ Desktop.ini
 **/data/reports/
 
 # 自动生成的 ID 列表
-**/data/metadata/top50_ids.txt
+**/data/metadata/top50_ids*.txt
 
 # 训练 _with_codes JSONL（体积大，含离散编码，不提交）
 **/train_with_codes.jsonl
