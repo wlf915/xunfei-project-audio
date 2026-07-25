@@ -78,11 +78,13 @@ class Qwen3TTSTokenizer:
         """
         inst = cls()
 
-        AutoConfig.register("qwen3_tts_tokenizer_25hz", Qwen3TTSTokenizerV1Config)
-        AutoModel.register(Qwen3TTSTokenizerV1Config, Qwen3TTSTokenizerV1Model)
-
         AutoConfig.register("qwen3_tts_tokenizer_12hz", Qwen3TTSTokenizerV2Config)
         AutoModel.register(Qwen3TTSTokenizerV2Config, Qwen3TTSTokenizerV2Model)
+
+        # 25Hz Tokenizer 依赖 sox, 仅在可用时注册
+        if Qwen3TTSTokenizerV1Config is not None and Qwen3TTSTokenizerV1Model is not None:
+            AutoConfig.register("qwen3_tts_tokenizer_25hz", Qwen3TTSTokenizerV1Config)
+            AutoModel.register(Qwen3TTSTokenizerV1Config, Qwen3TTSTokenizerV1Model)
 
         inst.feature_extractor = AutoFeatureExtractor.from_pretrained(pretrained_model_name_or_path)
         inst.model = AutoModel.from_pretrained(pretrained_model_name_or_path, **kwargs)

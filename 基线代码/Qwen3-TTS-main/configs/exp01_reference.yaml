@@ -1,0 +1,36 @@
+experiment_name: exp01_lr2e-6_bs2_ep3
+
+model:
+  name: Qwen3-TTS-12Hz-1.7B-Base
+  tokenizer: Qwen3-TTS-Tokenizer-12Hz
+  fine_tuning_method: full_parameter_sft
+  attention: flash_attention_2
+  precision: bf16
+
+dataset:
+  total_samples: 100
+  train_samples: 90
+  test_samples: 10
+  sample_rate: 24000
+  channels: 1
+  sample_format: pcm_s16le
+
+training:
+  speaker_name: student_voice
+  batch_size: 2
+  gradient_accumulation_steps: 4
+  effective_batch_size: 8
+  learning_rate: 2.0e-6
+  num_epochs: 3
+
+hardware:
+  gpu: NVIDIA A800 80GB
+  gpu_count: 1
+
+result:
+  initial_logged_loss: 13.6357
+  final_logged_loss: 7.9727
+  checkpoints:
+    - checkpoint-epoch-0
+    - checkpoint-epoch-1
+    - checkpoint-epoch-2

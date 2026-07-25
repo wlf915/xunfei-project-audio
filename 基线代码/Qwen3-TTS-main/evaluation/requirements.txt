@@ -1,0 +1,2 @@
+funasr>=1.2.6
+matplotlib>=3.8.0
