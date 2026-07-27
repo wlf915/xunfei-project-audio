@@ -1,0 +1,65 @@
+experiment_name: exp01_repro_seed42
+
+purpose: >
+  Rerun the original 100-sample Qwen3-TTS fine-tuning experiment
+  with explicit reproducibility control.
+
+model:
+  name: Qwen3-TTS-12Hz-1.7B-Base
+  tokenizer: Qwen3-TTS-Tokenizer-12Hz
+  fine_tuning_method: full_parameter_sft
+  attention: flash_attention_2
+  precision: bf16
+
+dataset:
+  total_samples: 100
+  train_samples: 90
+  test_samples: 10
+  sample_rate: 24000
+  channels: 1
+  sample_format: pcm_s16le
+
+speaker_condition:
+  speaker_name: student_voice
+  ref_audio_policy: unified_reference_audio
+  ref_audio_count_in_train_jsonl: 1
+  description: >
+    All 90 training samples use the same ref_audio.
+    The current Qwen3-TTS custom voice SFT workflow does not expose
+    a standalone speaker_embedding.pt file. Speaker condition is fixed
+    by using one unified ref_audio in training and the same speaker_name
+    during inference.
+
+reproducibility:
+  seed: 42
+  pythonhashseed: 42
+  python_random_seed: fixed
+  numpy_seed: fixed
+  torch_cpu_seed: fixed
+  torch_cuda_seed: fixed
+  cudnn_deterministic: true
+  cudnn_benchmark: false
+
+training:
+  batch_size: 2
+  gradient_accumulation_steps: 4
+  effective_batch_size: 8
+  learning_rate: 2.0e-6
+  num_epochs: 3
+
+hardware:
+  gpu: NVIDIA A800 80GB
+  gpu_count: 1
+
+result:
+  status: completed
+  initial_logged_loss: 15.0972
+  final_logged_loss: 8.0715
+  checkpoints:
+    - checkpoint-epoch-0
+    - checkpoint-epoch-1
+    - checkpoint-epoch-2
+
+notes:
+  - Checkpoints are not uploaded to GitHub because of file size.
+  - Generated comparison samples are stored in results/samples_seed42.
