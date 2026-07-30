@@ -1,0 +1,82 @@
+experiment_name: exp02_200_seed42
+
+purpose: >
+  Fine-tune Qwen3-TTS using the expanded 200-sample single-speaker dataset
+  with explicit seed control and fixed speaker condition.
+
+model:
+  name: Qwen3-TTS-12Hz-1.7B-Base
+  tokenizer: Qwen3-TTS-Tokenizer-12Hz
+  fine_tuning_method: full_parameter_sft
+  attention: flash_attention_2
+  precision: bf16
+
+dataset:
+  total_samples: 200
+  train_samples: 180
+  test_samples: 20
+  split_rule: sample_ids_divisible_by_10_are_test
+  old_samples: 100
+  new_samples: 100
+  sample_rate: 24000
+  channels: 1
+  sample_format: pcm_s16le
+
+speaker_condition:
+  speaker_name: student_voice
+  ref_audio_policy: unified_reference_audio
+  ref_audio_count_in_train_jsonl: 1
+  description: >
+    All training and test samples use the same ref_audio.
+    The current Qwen3-TTS custom voice SFT workflow does not expose
+    a standalone speaker_embedding.pt file. Speaker condition is fixed
+    by unified ref_audio, fixed speaker_name, and fixed seed.
+
+reproducibility:
+  seed: 42
+  pythonhashseed: 42
+  python_random_seed: fixed
+  numpy_seed: fixed
+  torch_cpu_seed: fixed
+  torch_cuda_seed: fixed
+  cudnn_deterministic: true
+  cudnn_benchmark: false
+
+training:
+  batch_size: 2
+  gradient_accumulation_steps: 4
+  effective_batch_size: 8
+  learning_rate: 2.0e-6
+  num_epochs: 3
+
+hardware:
+  gpu: NVIDIA A800 80GB
+  gpu_count: 1
+
+result:
+  status: completed
+  initial_logged_loss: 15.1333
+  final_logged_loss: 7.0838
+  checkpoints:
+    - checkpoint-epoch-0
+    - checkpoint-epoch-1
+    - checkpoint-epoch-2
+
+inference:
+  test20_epoch2:
+    checkpoint: checkpoint-epoch-2
+    num_samples: 20
+    output_dir: results/samples_exp02_200_seed42_test20
+  compare3:
+    checkpoints:
+      - checkpoint-epoch-0
+      - checkpoint-epoch-1
+      - checkpoint-epoch-2
+    texts_per_checkpoint: 3
+    num_samples: 9
+    output_dir: results/samples_exp02_200_seed42_compare3
+
+notes:
+  - Checkpoints are not uploaded to GitHub because of file size.
+  - Full training JSONL with audio_codes is not uploaded.
+  - Generated samples are uploaded for listening and comparison.
