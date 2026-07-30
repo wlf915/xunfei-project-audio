@@ -1,0 +1,11 @@
+experiment_name=ep5_lr2e-6_ref031_seed42
+learning_rate=2e-6
+num_epochs=5
+batch_size=2
+gradient_accumulation_steps=4
+effective_batch_size=8
+seed=42
+speaker_name=student_voice
+ref_audio=/root/autodl-tmp/xunfei-repro/xunfei-project-audio-main/基线代码/Qwen3-TTS-main/data/wavs/031.wav
+train_jsonl=/root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/data/processed/train_with_codes.jsonl
+base_model=/root/autodl-tmp/qwen3tts/models/Qwen3-TTS-12Hz-1.7B-Base

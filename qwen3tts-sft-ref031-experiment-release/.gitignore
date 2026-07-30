@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+*.pid
+checkpoints/
+checkpoint-epoch-*/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,442 @@
+
+==================================================
+Processing epoch0
+Checkpoint: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/checkpoints/checkpoint-epoch-0
+==================================================
+Loading checkpoint: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/checkpoints/checkpoint-epoch-0
+You are attempting to use Flash Attention 2 without specifying a torch dtype. This might lead to unexpected behaviour
+===== Generating compare3 =====
+Generating: epoch0_seen_style.wav
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/compare_audio/epoch0_seen_style.wav
+Generating: epoch0_unseen_short.wav
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/compare_audio/epoch0_unseen_short.wav
+Generating: epoch0_unseen_long.wav
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/compare_audio/epoch0_unseen_long.wav
+===== Reading test20 =====
+===== Generating test20 =====
+[1/20] Generating test_010.wav: 我已经收到你的邮件了。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch0/test_010.wav
+[2/20] Generating test_020.wav: 这家餐厅的菜很好吃。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch0/test_020.wav
+[3/20] Generating test_030.wav: 我准备回宿舍休息。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch0/test_030.wav
+[4/20] Generating test_040.wav: 希望今天能够顺利完成全部训练任务。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch0/test_040.wav
+[5/20] Generating test_050.wav: 你觉得这个方案怎么样？
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch0/test_050.wav
+[6/20] Generating test_060.wav: 这个效果太自然了！
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch0/test_060.wav
+[7/20] Generating test_070.wav: 今天温度是二十八摄氏度。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch0/test_070.wav
+[8/20] Generating test_080.wav: 多模态模型可以同时处理图像和文字。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch0/test_080.wav
+[9/20] Generating test_090.wav: 今天开始新的实验。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch0/test_090.wav
+[10/20] Generating test_100.wav: 希望我们的实验取得成功。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch0/test_100.wav
+[11/20] Generating test_110.wav: 量化考核、薪酬与业绩挂钩的机制。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch0/test_110.wav
+[12/20] Generating test_120.wav: 他只称太太亦很信任他。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch0/test_120.wav
+[13/20] Generating test_130.wav: 能否重现亚特兰大奥运会上的辉煌？
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch0/test_130.wav
+[14/20] Generating test_140.wav: 你银行卡里竟然还有钱？
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch0/test_140.wav
+[15/20] Generating test_150.wav: 抹布也是很有用的哟！
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch0/test_150.wav
+[16/20] Generating test_160.wav: 有什么心事吗？可以和我分享一下呀。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch0/test_160.wav
+[17/20] Generating test_170.wav: 其余的是斑胸草雀和枫鸟等种类。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch0/test_170.wav
+[18/20] Generating test_180.wav: 父亲说他无钱为儿操办婚事，打算去卖肾。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch0/test_180.wav
+[19/20] Generating test_190.wav: 网民们是否普遍受到过流氓软件的骚扰呢？
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch0/test_190.wav
+[20/20] Generating test_200.wav: 岁月荏苒，人生易老。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch0/test_200.wav
+Compare directory: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/compare_audio
+Test directory: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch0
+Done.
+Compare audio count for epoch0: 3
+Test audio count for epoch0: 20
+Metadata lines for epoch0: 21
+Deleted checkpoint after successful 23-audio inference: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/checkpoints/checkpoint-epoch-0
+Completed epoch0
+
+==================================================
+Processing epoch1
+Checkpoint: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/checkpoints/checkpoint-epoch-1
+==================================================
+Loading checkpoint: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/checkpoints/checkpoint-epoch-1
+You are attempting to use Flash Attention 2 without specifying a torch dtype. This might lead to unexpected behaviour
+===== Generating compare3 =====
+Generating: epoch1_seen_style.wav
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/compare_audio/epoch1_seen_style.wav
+Generating: epoch1_unseen_short.wav
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/compare_audio/epoch1_unseen_short.wav
+Generating: epoch1_unseen_long.wav
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/compare_audio/epoch1_unseen_long.wav
+===== Reading test20 =====
+===== Generating test20 =====
+[1/20] Generating test_010.wav: 我已经收到你的邮件了。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch1/test_010.wav
+[2/20] Generating test_020.wav: 这家餐厅的菜很好吃。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch1/test_020.wav
+[3/20] Generating test_030.wav: 我准备回宿舍休息。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch1/test_030.wav
+[4/20] Generating test_040.wav: 希望今天能够顺利完成全部训练任务。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch1/test_040.wav
+[5/20] Generating test_050.wav: 你觉得这个方案怎么样？
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch1/test_050.wav
+[6/20] Generating test_060.wav: 这个效果太自然了！
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch1/test_060.wav
+[7/20] Generating test_070.wav: 今天温度是二十八摄氏度。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch1/test_070.wav
+[8/20] Generating test_080.wav: 多模态模型可以同时处理图像和文字。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch1/test_080.wav
+[9/20] Generating test_090.wav: 今天开始新的实验。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch1/test_090.wav
+[10/20] Generating test_100.wav: 希望我们的实验取得成功。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch1/test_100.wav
+[11/20] Generating test_110.wav: 量化考核、薪酬与业绩挂钩的机制。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch1/test_110.wav
+[12/20] Generating test_120.wav: 他只称太太亦很信任他。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch1/test_120.wav
+[13/20] Generating test_130.wav: 能否重现亚特兰大奥运会上的辉煌？
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch1/test_130.wav
+[14/20] Generating test_140.wav: 你银行卡里竟然还有钱？
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch1/test_140.wav
+[15/20] Generating test_150.wav: 抹布也是很有用的哟！
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch1/test_150.wav
+[16/20] Generating test_160.wav: 有什么心事吗？可以和我分享一下呀。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch1/test_160.wav
+[17/20] Generating test_170.wav: 其余的是斑胸草雀和枫鸟等种类。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch1/test_170.wav
+[18/20] Generating test_180.wav: 父亲说他无钱为儿操办婚事，打算去卖肾。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch1/test_180.wav
+[19/20] Generating test_190.wav: 网民们是否普遍受到过流氓软件的骚扰呢？
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch1/test_190.wav
+[20/20] Generating test_200.wav: 岁月荏苒，人生易老。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch1/test_200.wav
+Compare directory: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/compare_audio
+Test directory: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch1
+Done.
+Compare audio count for epoch1: 3
+Test audio count for epoch1: 20
+Metadata lines for epoch1: 21
+Deleted checkpoint after successful 23-audio inference: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/checkpoints/checkpoint-epoch-1
+Completed epoch1
+
+==================================================
+Processing epoch2
+Checkpoint: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/checkpoints/checkpoint-epoch-2
+==================================================
+Loading checkpoint: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/checkpoints/checkpoint-epoch-2
+You are attempting to use Flash Attention 2 without specifying a torch dtype. This might lead to unexpected behaviour
+===== Generating compare3 =====
+Generating: epoch2_seen_style.wav
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/compare_audio/epoch2_seen_style.wav
+Generating: epoch2_unseen_short.wav
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/compare_audio/epoch2_unseen_short.wav
+Generating: epoch2_unseen_long.wav
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/compare_audio/epoch2_unseen_long.wav
+===== Reading test20 =====
+===== Generating test20 =====
+[1/20] Generating test_010.wav: 我已经收到你的邮件了。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch2/test_010.wav
+[2/20] Generating test_020.wav: 这家餐厅的菜很好吃。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch2/test_020.wav
+[3/20] Generating test_030.wav: 我准备回宿舍休息。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch2/test_030.wav
+[4/20] Generating test_040.wav: 希望今天能够顺利完成全部训练任务。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch2/test_040.wav
+[5/20] Generating test_050.wav: 你觉得这个方案怎么样？
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch2/test_050.wav
+[6/20] Generating test_060.wav: 这个效果太自然了！
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch2/test_060.wav
+[7/20] Generating test_070.wav: 今天温度是二十八摄氏度。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch2/test_070.wav
+[8/20] Generating test_080.wav: 多模态模型可以同时处理图像和文字。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch2/test_080.wav
+[9/20] Generating test_090.wav: 今天开始新的实验。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch2/test_090.wav
+[10/20] Generating test_100.wav: 希望我们的实验取得成功。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch2/test_100.wav
+[11/20] Generating test_110.wav: 量化考核、薪酬与业绩挂钩的机制。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch2/test_110.wav
+[12/20] Generating test_120.wav: 他只称太太亦很信任他。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch2/test_120.wav
+[13/20] Generating test_130.wav: 能否重现亚特兰大奥运会上的辉煌？
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch2/test_130.wav
+[14/20] Generating test_140.wav: 你银行卡里竟然还有钱？
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch2/test_140.wav
+[15/20] Generating test_150.wav: 抹布也是很有用的哟！
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch2/test_150.wav
+[16/20] Generating test_160.wav: 有什么心事吗？可以和我分享一下呀。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch2/test_160.wav
+[17/20] Generating test_170.wav: 其余的是斑胸草雀和枫鸟等种类。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch2/test_170.wav
+[18/20] Generating test_180.wav: 父亲说他无钱为儿操办婚事，打算去卖肾。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch2/test_180.wav
+[19/20] Generating test_190.wav: 网民们是否普遍受到过流氓软件的骚扰呢？
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch2/test_190.wav
+[20/20] Generating test_200.wav: 岁月荏苒，人生易老。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch2/test_200.wav
+Compare directory: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/compare_audio
+Test directory: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch2
+Done.
+Compare audio count for epoch2: 3
+Test audio count for epoch2: 20
+Metadata lines for epoch2: 21
+Deleted checkpoint after successful 23-audio inference: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/checkpoints/checkpoint-epoch-2
+Completed epoch2
+
+==================================================
+Processing epoch3
+Checkpoint: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/checkpoints/checkpoint-epoch-3
+==================================================
+Loading checkpoint: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/checkpoints/checkpoint-epoch-3
+You are attempting to use Flash Attention 2 without specifying a torch dtype. This might lead to unexpected behaviour
+===== Generating compare3 =====
+Generating: epoch3_seen_style.wav
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/compare_audio/epoch3_seen_style.wav
+Generating: epoch3_unseen_short.wav
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/compare_audio/epoch3_unseen_short.wav
+Generating: epoch3_unseen_long.wav
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/compare_audio/epoch3_unseen_long.wav
+===== Reading test20 =====
+===== Generating test20 =====
+[1/20] Generating test_010.wav: 我已经收到你的邮件了。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch3/test_010.wav
+[2/20] Generating test_020.wav: 这家餐厅的菜很好吃。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch3/test_020.wav
+[3/20] Generating test_030.wav: 我准备回宿舍休息。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch3/test_030.wav
+[4/20] Generating test_040.wav: 希望今天能够顺利完成全部训练任务。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch3/test_040.wav
+[5/20] Generating test_050.wav: 你觉得这个方案怎么样？
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch3/test_050.wav
+[6/20] Generating test_060.wav: 这个效果太自然了！
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch3/test_060.wav
+[7/20] Generating test_070.wav: 今天温度是二十八摄氏度。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch3/test_070.wav
+[8/20] Generating test_080.wav: 多模态模型可以同时处理图像和文字。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch3/test_080.wav
+[9/20] Generating test_090.wav: 今天开始新的实验。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch3/test_090.wav
+[10/20] Generating test_100.wav: 希望我们的实验取得成功。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch3/test_100.wav
+[11/20] Generating test_110.wav: 量化考核、薪酬与业绩挂钩的机制。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch3/test_110.wav
+[12/20] Generating test_120.wav: 他只称太太亦很信任他。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch3/test_120.wav
+[13/20] Generating test_130.wav: 能否重现亚特兰大奥运会上的辉煌？
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch3/test_130.wav
+[14/20] Generating test_140.wav: 你银行卡里竟然还有钱？
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch3/test_140.wav
+[15/20] Generating test_150.wav: 抹布也是很有用的哟！
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch3/test_150.wav
+[16/20] Generating test_160.wav: 有什么心事吗？可以和我分享一下呀。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch3/test_160.wav
+[17/20] Generating test_170.wav: 其余的是斑胸草雀和枫鸟等种类。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch3/test_170.wav
+[18/20] Generating test_180.wav: 父亲说他无钱为儿操办婚事，打算去卖肾。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch3/test_180.wav
+[19/20] Generating test_190.wav: 网民们是否普遍受到过流氓软件的骚扰呢？
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch3/test_190.wav
+[20/20] Generating test_200.wav: 岁月荏苒，人生易老。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch3/test_200.wav
+Compare directory: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/compare_audio
+Test directory: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch3
+Done.
+Compare audio count for epoch3: 3
+Test audio count for epoch3: 20
+Metadata lines for epoch3: 21
+Deleted checkpoint after successful 23-audio inference: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/checkpoints/checkpoint-epoch-3
+Completed epoch3
+
+==================================================
+Processing epoch4
+Checkpoint: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/checkpoints/checkpoint-epoch-4
+==================================================
+Loading checkpoint: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/checkpoints/checkpoint-epoch-4
+You are attempting to use Flash Attention 2 without specifying a torch dtype. This might lead to unexpected behaviour
+===== Generating compare3 =====
+Generating: epoch4_seen_style.wav
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/compare_audio/epoch4_seen_style.wav
+Generating: epoch4_unseen_short.wav
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/compare_audio/epoch4_unseen_short.wav
+Generating: epoch4_unseen_long.wav
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/compare_audio/epoch4_unseen_long.wav
+===== Reading test20 =====
+===== Generating test20 =====
+[1/20] Generating test_010.wav: 我已经收到你的邮件了。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch4/test_010.wav
+[2/20] Generating test_020.wav: 这家餐厅的菜很好吃。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch4/test_020.wav
+[3/20] Generating test_030.wav: 我准备回宿舍休息。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch4/test_030.wav
+[4/20] Generating test_040.wav: 希望今天能够顺利完成全部训练任务。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch4/test_040.wav
+[5/20] Generating test_050.wav: 你觉得这个方案怎么样？
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch4/test_050.wav
+[6/20] Generating test_060.wav: 这个效果太自然了！
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch4/test_060.wav
+[7/20] Generating test_070.wav: 今天温度是二十八摄氏度。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch4/test_070.wav
+[8/20] Generating test_080.wav: 多模态模型可以同时处理图像和文字。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch4/test_080.wav
+[9/20] Generating test_090.wav: 今天开始新的实验。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch4/test_090.wav
+[10/20] Generating test_100.wav: 希望我们的实验取得成功。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch4/test_100.wav
+[11/20] Generating test_110.wav: 量化考核、薪酬与业绩挂钩的机制。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch4/test_110.wav
+[12/20] Generating test_120.wav: 他只称太太亦很信任他。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch4/test_120.wav
+[13/20] Generating test_130.wav: 能否重现亚特兰大奥运会上的辉煌？
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch4/test_130.wav
+[14/20] Generating test_140.wav: 你银行卡里竟然还有钱？
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch4/test_140.wav
+[15/20] Generating test_150.wav: 抹布也是很有用的哟！
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch4/test_150.wav
+[16/20] Generating test_160.wav: 有什么心事吗？可以和我分享一下呀。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch4/test_160.wav
+[17/20] Generating test_170.wav: 其余的是斑胸草雀和枫鸟等种类。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch4/test_170.wav
+[18/20] Generating test_180.wav: 父亲说他无钱为儿操办婚事，打算去卖肾。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch4/test_180.wav
+[19/20] Generating test_190.wav: 网民们是否普遍受到过流氓软件的骚扰呢？
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch4/test_190.wav
+[20/20] Generating test_200.wav: 岁月荏苒，人生易老。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch4/test_200.wav
+Compare directory: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/compare_audio
+Test directory: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/results/test20/epoch4
+Done.
+Compare audio count for epoch4: 3
+Test audio count for epoch4: 20
+Metadata lines for epoch4: 21
+Deleted checkpoint after successful 23-audio inference: /root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/hparam_runs/ep5_lr2e-6_ref031_seed42/checkpoints/checkpoint-epoch-4
+Completed epoch4
+
+==================================================
+All epochs completed successfully.
+Expected compare audio: 15
+Expected test audio: 100
+All checkpoints have been removed.
+==================================================

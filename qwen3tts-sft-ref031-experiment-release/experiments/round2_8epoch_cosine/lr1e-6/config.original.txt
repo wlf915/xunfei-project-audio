@@ -1,0 +1,14 @@
+experiment_name=B_lr1e-6_cosine8_ref031_seed42
+learning_rate=1e-6
+scheduler=cosine
+warmup_ratio=0.05
+num_epochs=8
+batch_size=2
+gradient_accumulation_steps=4
+effective_batch_size=8
+seed=42
+speaker_name=student_voice
+reference_audio=/root/autodl-tmp/xunfei-repro/xunfei-project-audio-main/基线代码/Qwen3-TTS-main/data/wavs/031.wav
+train_jsonl=/root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/data/processed/train_with_codes.jsonl
+test_jsonl=/root/autodl-tmp/qwen3tts/ref031_3lr_5ep_seed42/data/metadata/test_raw.jsonl
+base_model=/root/autodl-tmp/qwen3tts/models/Qwen3-TTS-12Hz-1.7B-Base
