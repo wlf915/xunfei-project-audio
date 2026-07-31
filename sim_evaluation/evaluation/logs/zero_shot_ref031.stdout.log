@@ -1,0 +1,74 @@
+将生成以下 20 条 zero-shot：
+  old:000010 -> test_010.wav | 我已经收到你的邮件了。
+  old:000020 -> test_020.wav | 这家餐厅的菜很好吃。
+  old:000030 -> test_030.wav | 我准备回宿舍休息。
+  old:000040 -> test_040.wav | 希望今天能够顺利完成全部训练任务。
+  old:000050 -> test_050.wav | 你觉得这个方案怎么样？
+  old:000060 -> test_060.wav | 这个效果太自然了！
+  old:000070 -> test_070.wav | 今天温度是二十八摄氏度。
+  old:000080 -> test_080.wav | 多模态模型可以同时处理图像和文字。
+  old:000090 -> test_090.wav | 今天开始新的实验。
+  old:000100 -> test_100.wav | 希望我们的实验取得成功。
+  v2:000010 -> test_110.wav | 量化考核、薪酬与业绩挂钩的机制。
+  v2:000020 -> test_120.wav | 他只称太太亦很信任他。
+  v2:000030 -> test_130.wav | 能否重现亚特兰大奥运会上的辉煌？
+  v2:000040 -> test_140.wav | 你银行卡里竟然还有钱？
+  v2:000050 -> test_150.wav | 抹布也是很有用的哟！
+  v2:000060 -> test_160.wav | 有什么心事吗？可以和我分享一下呀。
+  v2:000070 -> test_170.wav | 其余的是斑胸草雀和枫鸟等种类。
+  v2:000080 -> test_180.wav | 父亲说他无钱为儿操办婚事，打算去卖肾。
+  v2:000090 -> test_190.wav | 网民们是否普遍受到过流氓软件的骚扰呢？
+  v2:000100 -> test_200.wav | 岁月荏苒，人生易老。
+参考音频：E:\xunfei-project-audio\基线代码\Qwen3-TTS-main\data\wavs\031.wav
+参考文本：如果时间允许，我们下午一起去实验室继续完成模型训练。
+seed：42（每条生成前重置）
+输出目录：E:\xunfei-project-audio\sim_evaluation\evaluation\data\generated\zero_shot_ref031
+模型权重：D:\huggingface-cache\hub\models--Qwen--Qwen3-TTS-12Hz-1.7B-Base\snapshots\fd4b254389122332181a7c3db7f27e918eec64e3
+
+********
+Warning: flash-attn is not installed. Will only run the manual PyTorch version. Please install flash-attn for faster inference.
+********
+ 
+正在加载 Qwen3-TTS Base 模型……
+正在用旧 031.wav 创建完整 voice-clone prompt……
+[01/20] 生成 test_010.wav：我已经收到你的邮件了。
+[成功] E:\xunfei-project-audio\sim_evaluation\evaluation\data\generated\zero_shot_ref031\test_010.wav
+[02/20] 生成 test_020.wav：这家餐厅的菜很好吃。
+[成功] E:\xunfei-project-audio\sim_evaluation\evaluation\data\generated\zero_shot_ref031\test_020.wav
+[03/20] 生成 test_030.wav：我准备回宿舍休息。
+[成功] E:\xunfei-project-audio\sim_evaluation\evaluation\data\generated\zero_shot_ref031\test_030.wav
+[04/20] 生成 test_040.wav：希望今天能够顺利完成全部训练任务。
+[成功] E:\xunfei-project-audio\sim_evaluation\evaluation\data\generated\zero_shot_ref031\test_040.wav
+[05/20] 生成 test_050.wav：你觉得这个方案怎么样？
+[成功] E:\xunfei-project-audio\sim_evaluation\evaluation\data\generated\zero_shot_ref031\test_050.wav
+[06/20] 生成 test_060.wav：这个效果太自然了！
+[成功] E:\xunfei-project-audio\sim_evaluation\evaluation\data\generated\zero_shot_ref031\test_060.wav
+[07/20] 生成 test_070.wav：今天温度是二十八摄氏度。
+[成功] E:\xunfei-project-audio\sim_evaluation\evaluation\data\generated\zero_shot_ref031\test_070.wav
+[08/20] 生成 test_080.wav：多模态模型可以同时处理图像和文字。
+[成功] E:\xunfei-project-audio\sim_evaluation\evaluation\data\generated\zero_shot_ref031\test_080.wav
+[09/20] 生成 test_090.wav：今天开始新的实验。
+[成功] E:\xunfei-project-audio\sim_evaluation\evaluation\data\generated\zero_shot_ref031\test_090.wav
+[10/20] 生成 test_100.wav：希望我们的实验取得成功。
+[成功] E:\xunfei-project-audio\sim_evaluation\evaluation\data\generated\zero_shot_ref031\test_100.wav
+[11/20] 生成 test_110.wav：量化考核、薪酬与业绩挂钩的机制。
+[成功] E:\xunfei-project-audio\sim_evaluation\evaluation\data\generated\zero_shot_ref031\test_110.wav
+[12/20] 生成 test_120.wav：他只称太太亦很信任他。
+[成功] E:\xunfei-project-audio\sim_evaluation\evaluation\data\generated\zero_shot_ref031\test_120.wav
+[13/20] 生成 test_130.wav：能否重现亚特兰大奥运会上的辉煌？
+[成功] E:\xunfei-project-audio\sim_evaluation\evaluation\data\generated\zero_shot_ref031\test_130.wav
+[14/20] 生成 test_140.wav：你银行卡里竟然还有钱？
+[成功] E:\xunfei-project-audio\sim_evaluation\evaluation\data\generated\zero_shot_ref031\test_140.wav
+[15/20] 生成 test_150.wav：抹布也是很有用的哟！
+[成功] E:\xunfei-project-audio\sim_evaluation\evaluation\data\generated\zero_shot_ref031\test_150.wav
+[16/20] 生成 test_160.wav：有什么心事吗？可以和我分享一下呀。
+[成功] E:\xunfei-project-audio\sim_evaluation\evaluation\data\generated\zero_shot_ref031\test_160.wav
+[17/20] 生成 test_170.wav：其余的是斑胸草雀和枫鸟等种类。
+[成功] E:\xunfei-project-audio\sim_evaluation\evaluation\data\generated\zero_shot_ref031\test_170.wav
+[18/20] 生成 test_180.wav：父亲说他无钱为儿操办婚事，打算去卖肾。
+[成功] E:\xunfei-project-audio\sim_evaluation\evaluation\data\generated\zero_shot_ref031\test_180.wav
+[19/20] 生成 test_190.wav：网民们是否普遍受到过流氓软件的骚扰呢？
+[成功] E:\xunfei-project-audio\sim_evaluation\evaluation\data\generated\zero_shot_ref031\test_190.wav
+[20/20] 生成 test_200.wav：岁月荏苒，人生易老。
+[成功] E:\xunfei-project-audio\sim_evaluation\evaluation\data\generated\zero_shot_ref031\test_200.wav
+生成完成：20 条 WAV；manifest：E:\xunfei-project-audio\sim_evaluation\evaluation\data\generated\zero_shot_ref031\zero_shot_ref031_manifest.csv
