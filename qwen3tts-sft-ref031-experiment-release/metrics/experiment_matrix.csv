@@ -1,0 +1,7 @@
+"round","run_id","learning_rate","epochs","scheduler","warmup_ratio","compare_wav","test_wav","total_wav","seed","batch_size","gradient_accumulation_steps","effective_batch_size","training_examples","held_out_test_examples","reference_audio_id"
+"round1_5epoch","lr1e-6","1e-6","5","constant","0","15","100","115","42","2","4","8","180","20","wavs/031.wav"
+"round1_5epoch","lr2e-6","2e-6","5","constant","0","15","100","115","42","2","4","8","180","20","wavs/031.wav"
+"round1_5epoch","lr5e-6","5e-6","5","constant","0","15","100","115","42","2","4","8","180","20","wavs/031.wav"
+"round2_8epoch_cosine","lr5e-7","5e-7","8","cosine","0.05","24","160","184","42","2","4","8","180","20","wavs/031.wav"
+"round2_8epoch_cosine","lr1e-6","1e-6","8","cosine","0.05","24","160","184","42","2","4","8","180","20","wavs/031.wav"
+"round2_8epoch_cosine","lr1.5e-6","1.5e-6","8","cosine","0.05","24","160","184","42","2","4","8","180","20","wavs/031.wav"

@@ -1,0 +1,1365 @@
+Reproducibility seed set to 42
+Detected kernel version 4.19.90, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+`torch_dtype` is deprecated! Use `dtype` instead!
+You are attempting to use Flash Attention 2 without specifying a torch dtype. This might lead to unexpected behaviour
+Scheduler: cosine | warmup_ratio=0.05 | micro_batches_per_epoch=90 | update_steps_per_epoch=23 | total_update_steps=184 | warmup_steps=10
+Epoch 0 | Step 0 | Loss: 15.134110 | LR: 0.0000000000e+00
+Epoch 0 | Step 1 | Loss: 15.065191 | LR: 0.0000000000e+00
+Epoch 0 | Step 2 | Loss: 14.668519 | LR: 0.0000000000e+00
+Epoch 0 | Step 3 | Loss: 14.709749 | LR: 1.5000000000e-07
+Epoch 0 | Step 4 | Loss: 14.255160 | LR: 1.5000000000e-07
+Epoch 0 | Step 5 | Loss: 15.140528 | LR: 1.5000000000e-07
+Epoch 0 | Step 6 | Loss: 14.436814 | LR: 1.5000000000e-07
+Epoch 0 | Step 7 | Loss: 14.409559 | LR: 3.0000000000e-07
+Epoch 0 | Step 8 | Loss: 14.418455 | LR: 3.0000000000e-07
+Epoch 0 | Step 9 | Loss: 14.862561 | LR: 3.0000000000e-07
+Epoch 0 | Step 10 | Loss: 13.886361 | LR: 3.0000000000e-07
+Epoch 0 | Step 11 | Loss: 14.386027 | LR: 4.5000000000e-07
+Epoch 0 | Step 12 | Loss: 14.541140 | LR: 4.5000000000e-07
+Epoch 0 | Step 13 | Loss: 14.877142 | LR: 4.5000000000e-07
+Epoch 0 | Step 14 | Loss: 15.586889 | LR: 4.5000000000e-07
+Epoch 0 | Step 15 | Loss: 13.502090 | LR: 6.0000000000e-07
+Epoch 0 | Step 16 | Loss: 15.216454 | LR: 6.0000000000e-07
+Epoch 0 | Step 17 | Loss: 14.280891 | LR: 6.0000000000e-07
+Epoch 0 | Step 18 | Loss: 14.666935 | LR: 6.0000000000e-07
+Epoch 0 | Step 19 | Loss: 13.912227 | LR: 7.5000000000e-07
+Epoch 0 | Step 20 | Loss: 13.845715 | LR: 7.5000000000e-07
+Epoch 0 | Step 21 | Loss: 14.424458 | LR: 7.5000000000e-07
+Epoch 0 | Step 22 | Loss: 13.992435 | LR: 7.5000000000e-07
+Epoch 0 | Step 23 | Loss: 15.305036 | LR: 9.0000000000e-07
+Epoch 0 | Step 24 | Loss: 14.427426 | LR: 9.0000000000e-07
+Epoch 0 | Step 25 | Loss: 14.531534 | LR: 9.0000000000e-07
+Epoch 0 | Step 26 | Loss: 14.229304 | LR: 9.0000000000e-07
+Epoch 0 | Step 27 | Loss: 14.498392 | LR: 1.0500000000e-06
+Epoch 0 | Step 28 | Loss: 13.847201 | LR: 1.0500000000e-06
+Epoch 0 | Step 29 | Loss: 13.511950 | LR: 1.0500000000e-06
+Epoch 0 | Step 30 | Loss: 14.913698 | LR: 1.0500000000e-06
+Epoch 0 | Step 31 | Loss: 13.901160 | LR: 1.2000000000e-06
+Epoch 0 | Step 32 | Loss: 13.897323 | LR: 1.2000000000e-06
+Epoch 0 | Step 33 | Loss: 13.917789 | LR: 1.2000000000e-06
+Epoch 0 | Step 34 | Loss: 14.117678 | LR: 1.2000000000e-06
+Epoch 0 | Step 35 | Loss: 14.130407 | LR: 1.3500000000e-06
+Epoch 0 | Step 36 | Loss: 14.171303 | LR: 1.3500000000e-06
+Epoch 0 | Step 37 | Loss: 14.161502 | LR: 1.3500000000e-06
+Epoch 0 | Step 38 | Loss: 14.632774 | LR: 1.3500000000e-06
+Epoch 0 | Step 39 | Loss: 13.604596 | LR: 1.5000000000e-06
+Epoch 0 | Step 40 | Loss: 13.396178 | LR: 1.5000000000e-06
+Epoch 0 | Step 41 | Loss: 13.978929 | LR: 1.5000000000e-06
+Epoch 0 | Step 42 | Loss: 13.620793 | LR: 1.5000000000e-06
+Epoch 0 | Step 43 | Loss: 13.568722 | LR: 1.4998777579e-06
+Epoch 0 | Step 44 | Loss: 14.075617 | LR: 1.4998777579e-06
+Epoch 0 | Step 45 | Loss: 13.752565 | LR: 1.4998777579e-06
+Epoch 0 | Step 46 | Loss: 14.617924 | LR: 1.4998777579e-06
+Epoch 0 | Step 47 | Loss: 13.663507 | LR: 1.4995110715e-06
+Epoch 0 | Step 48 | Loss: 13.867876 | LR: 1.4995110715e-06
+Epoch 0 | Step 49 | Loss: 13.358259 | LR: 1.4995110715e-06
+Epoch 0 | Step 50 | Loss: 13.066655 | LR: 1.4995110715e-06
+Epoch 0 | Step 51 | Loss: 13.871566 | LR: 1.4989000604e-06
+Epoch 0 | Step 52 | Loss: 13.065130 | LR: 1.4989000604e-06
+Epoch 0 | Step 53 | Loss: 14.095587 | LR: 1.4989000604e-06
+Epoch 0 | Step 54 | Loss: 13.670799 | LR: 1.4989000604e-06
+Epoch 0 | Step 55 | Loss: 12.990773 | LR: 1.4980449236e-06
+Epoch 0 | Step 56 | Loss: 14.035978 | LR: 1.4980449236e-06
+Epoch 0 | Step 57 | Loss: 13.425194 | LR: 1.4980449236e-06
+Epoch 0 | Step 58 | Loss: 13.089337 | LR: 1.4980449236e-06
+Epoch 0 | Step 59 | Loss: 13.894019 | LR: 1.4969459400e-06
+Epoch 0 | Step 60 | Loss: 13.000464 | LR: 1.4969459400e-06
+Epoch 0 | Step 61 | Loss: 14.037898 | LR: 1.4969459400e-06
+Epoch 0 | Step 62 | Loss: 13.458201 | LR: 1.4969459400e-06
+Epoch 0 | Step 63 | Loss: 13.355725 | LR: 1.4956034679e-06
+Epoch 0 | Step 64 | Loss: 13.341040 | LR: 1.4956034679e-06
+Epoch 0 | Step 65 | Loss: 13.369518 | LR: 1.4956034679e-06
+Epoch 0 | Step 66 | Loss: 12.870450 | LR: 1.4956034679e-06
+Epoch 0 | Step 67 | Loss: 12.664988 | LR: 1.4940179447e-06
+Epoch 0 | Step 68 | Loss: 12.825849 | LR: 1.4940179447e-06
+Epoch 0 | Step 69 | Loss: 12.927909 | LR: 1.4940179447e-06
+Epoch 0 | Step 70 | Loss: 13.158294 | LR: 1.4940179447e-06
+Epoch 0 | Step 71 | Loss: 12.327370 | LR: 1.4921898874e-06
+Epoch 0 | Step 72 | Loss: 12.613832 | LR: 1.4921898874e-06
+Epoch 0 | Step 73 | Loss: 13.186937 | LR: 1.4921898874e-06
+Epoch 0 | Step 74 | Loss: 12.969519 | LR: 1.4921898874e-06
+Epoch 0 | Step 75 | Loss: 13.551117 | LR: 1.4901198919e-06
+Epoch 0 | Step 76 | Loss: 12.158806 | LR: 1.4901198919e-06
+Epoch 0 | Step 77 | Loss: 12.565443 | LR: 1.4901198919e-06
+Epoch 0 | Step 78 | Loss: 12.830548 | LR: 1.4901198919e-06
+Epoch 0 | Step 79 | Loss: 12.146858 | LR: 1.4878086329e-06
+Epoch 0 | Step 80 | Loss: 11.792244 | LR: 1.4878086329e-06
+Epoch 0 | Step 81 | Loss: 12.387352 | LR: 1.4878086329e-06
+Epoch 0 | Step 82 | Loss: 12.569118 | LR: 1.4878086329e-06
+Epoch 0 | Step 83 | Loss: 12.270470 | LR: 1.4852568640e-06
+Epoch 0 | Step 84 | Loss: 12.263807 | LR: 1.4852568640e-06
+Epoch 0 | Step 85 | Loss: 11.965444 | LR: 1.4852568640e-06
+Epoch 0 | Step 86 | Loss: 13.053204 | LR: 1.4852568640e-06
+Epoch 0 | Step 87 | Loss: 11.743506 | LR: 1.4824654168e-06
+Epoch 0 | Step 88 | Loss: 12.138509 | LR: 1.4824654168e-06
+Epoch 0 | Step 89 | Loss: 12.496681 | LR: 1.4794352013e-06
+Starting inference for epoch 0: compare_root=/root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/compare_audio, test=/root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch0
+Loading checkpoint: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/checkpoints/checkpoint-epoch-0
+You are attempting to use Flash Attention 2 without specifying a torch dtype. This might lead to unexpected behaviour
+===== Generating compare3 =====
+Generating: epoch0_seen_style.wav
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/compare_audio/epoch0_seen_style.wav
+Generating: epoch0_unseen_short.wav
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/compare_audio/epoch0_unseen_short.wav
+Generating: epoch0_unseen_long.wav
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/compare_audio/epoch0_unseen_long.wav
+===== Reading test20 =====
+===== Generating test20 =====
+[1/20] Generating test_010.wav: 我已经收到你的邮件了。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch0/test_010.wav
+[2/20] Generating test_020.wav: 这家餐厅的菜很好吃。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch0/test_020.wav
+[3/20] Generating test_030.wav: 我准备回宿舍休息。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch0/test_030.wav
+[4/20] Generating test_040.wav: 希望今天能够顺利完成全部训练任务。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch0/test_040.wav
+[5/20] Generating test_050.wav: 你觉得这个方案怎么样？
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch0/test_050.wav
+[6/20] Generating test_060.wav: 这个效果太自然了！
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch0/test_060.wav
+[7/20] Generating test_070.wav: 今天温度是二十八摄氏度。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch0/test_070.wav
+[8/20] Generating test_080.wav: 多模态模型可以同时处理图像和文字。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch0/test_080.wav
+[9/20] Generating test_090.wav: 今天开始新的实验。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch0/test_090.wav
+[10/20] Generating test_100.wav: 希望我们的实验取得成功。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch0/test_100.wav
+[11/20] Generating test_110.wav: 量化考核、薪酬与业绩挂钩的机制。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch0/test_110.wav
+[12/20] Generating test_120.wav: 他只称太太亦很信任他。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch0/test_120.wav
+[13/20] Generating test_130.wav: 能否重现亚特兰大奥运会上的辉煌？
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch0/test_130.wav
+[14/20] Generating test_140.wav: 你银行卡里竟然还有钱？
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch0/test_140.wav
+[15/20] Generating test_150.wav: 抹布也是很有用的哟！
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch0/test_150.wav
+[16/20] Generating test_160.wav: 有什么心事吗？可以和我分享一下呀。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch0/test_160.wav
+[17/20] Generating test_170.wav: 其余的是斑胸草雀和枫鸟等种类。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch0/test_170.wav
+[18/20] Generating test_180.wav: 父亲说他无钱为儿操办婚事，打算去卖肾。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch0/test_180.wav
+[19/20] Generating test_190.wav: 网民们是否普遍受到过流氓软件的骚扰呢？
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch0/test_190.wav
+[20/20] Generating test_200.wav: 岁月荏苒，人生易老。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch0/test_200.wav
+Compare directory: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/compare_audio
+Test directory: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch0
+Done.
+Epoch 0 verification: all_wav=23, compare=3, test=20
+Epoch 0 inference verified; checkpoint deleted: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/checkpoints/checkpoint-epoch-0
+Epoch 1 | Step 0 | Loss: 11.376060 | LR: 1.4794352013e-06
+Epoch 1 | Step 1 | Loss: 12.901536 | LR: 1.4794352013e-06
+Epoch 1 | Step 2 | Loss: 11.840725 | LR: 1.4794352013e-06
+Epoch 1 | Step 3 | Loss: 11.514760 | LR: 1.4761672055e-06
+Epoch 1 | Step 4 | Loss: 12.151258 | LR: 1.4761672055e-06
+Epoch 1 | Step 5 | Loss: 12.508608 | LR: 1.4761672055e-06
+Epoch 1 | Step 6 | Loss: 11.304887 | LR: 1.4761672055e-06
+Epoch 1 | Step 7 | Loss: 12.960108 | LR: 1.4726624944e-06
+Epoch 1 | Step 8 | Loss: 11.234362 | LR: 1.4726624944e-06
+Epoch 1 | Step 9 | Loss: 11.886782 | LR: 1.4726624944e-06
+Epoch 1 | Step 10 | Loss: 11.953419 | LR: 1.4726624944e-06
+Epoch 1 | Step 11 | Loss: 11.231810 | LR: 1.4689222106e-06
+Epoch 1 | Step 12 | Loss: 12.135803 | LR: 1.4689222106e-06
+Epoch 1 | Step 13 | Loss: 11.764690 | LR: 1.4689222106e-06
+Epoch 1 | Step 14 | Loss: 11.697714 | LR: 1.4689222106e-06
+Epoch 1 | Step 15 | Loss: 11.691245 | LR: 1.4649475734e-06
+Epoch 1 | Step 16 | Loss: 11.657274 | LR: 1.4649475734e-06
+Epoch 1 | Step 17 | Loss: 11.845009 | LR: 1.4649475734e-06
+Epoch 1 | Step 18 | Loss: 11.448312 | LR: 1.4649475734e-06
+Epoch 1 | Step 19 | Loss: 11.124675 | LR: 1.4607398784e-06
+Epoch 1 | Step 20 | Loss: 11.302783 | LR: 1.4607398784e-06
+Epoch 1 | Step 21 | Loss: 12.088568 | LR: 1.4607398784e-06
+Epoch 1 | Step 22 | Loss: 11.591116 | LR: 1.4607398784e-06
+Epoch 1 | Step 23 | Loss: 11.274636 | LR: 1.4563004972e-06
+Epoch 1 | Step 24 | Loss: 12.020173 | LR: 1.4563004972e-06
+Epoch 1 | Step 25 | Loss: 11.362389 | LR: 1.4563004972e-06
+Epoch 1 | Step 26 | Loss: 11.239531 | LR: 1.4563004972e-06
+Epoch 1 | Step 27 | Loss: 11.397389 | LR: 1.4516308769e-06
+Epoch 1 | Step 28 | Loss: 10.946976 | LR: 1.4516308769e-06
+Epoch 1 | Step 29 | Loss: 10.735518 | LR: 1.4516308769e-06
+Epoch 1 | Step 30 | Loss: 11.044252 | LR: 1.4516308769e-06
+Epoch 1 | Step 31 | Loss: 11.501941 | LR: 1.4467325399e-06
+Epoch 1 | Step 32 | Loss: 11.443583 | LR: 1.4467325399e-06
+Epoch 1 | Step 33 | Loss: 11.499589 | LR: 1.4467325399e-06
+Epoch 1 | Step 34 | Loss: 11.372642 | LR: 1.4467325399e-06
+Epoch 1 | Step 35 | Loss: 12.053929 | LR: 1.4416070827e-06
+Epoch 1 | Step 36 | Loss: 10.648005 | LR: 1.4416070827e-06
+Epoch 1 | Step 37 | Loss: 10.966148 | LR: 1.4416070827e-06
+Epoch 1 | Step 38 | Loss: 10.723723 | LR: 1.4416070827e-06
+Epoch 1 | Step 39 | Loss: 11.083456 | LR: 1.4362561762e-06
+Epoch 1 | Step 40 | Loss: 11.534301 | LR: 1.4362561762e-06
+Epoch 1 | Step 41 | Loss: 10.772793 | LR: 1.4362561762e-06
+Epoch 1 | Step 42 | Loss: 11.287563 | LR: 1.4362561762e-06
+Epoch 1 | Step 43 | Loss: 11.564251 | LR: 1.4306815648e-06
+Epoch 1 | Step 44 | Loss: 11.003153 | LR: 1.4306815648e-06
+Epoch 1 | Step 45 | Loss: 11.137030 | LR: 1.4306815648e-06
+Epoch 1 | Step 46 | Loss: 12.201449 | LR: 1.4306815648e-06
+Epoch 1 | Step 47 | Loss: 10.835235 | LR: 1.4248850655e-06
+Epoch 1 | Step 48 | Loss: 10.977553 | LR: 1.4248850655e-06
+Epoch 1 | Step 49 | Loss: 10.880137 | LR: 1.4248850655e-06
+Epoch 1 | Step 50 | Loss: 11.935422 | LR: 1.4248850655e-06
+Epoch 1 | Step 51 | Loss: 11.450764 | LR: 1.4188685679e-06
+Epoch 1 | Step 52 | Loss: 11.001468 | LR: 1.4188685679e-06
+Epoch 1 | Step 53 | Loss: 11.206303 | LR: 1.4188685679e-06
+Epoch 1 | Step 54 | Loss: 11.178707 | LR: 1.4188685679e-06
+Epoch 1 | Step 55 | Loss: 10.761169 | LR: 1.4126340333e-06
+Epoch 1 | Step 56 | Loss: 10.340263 | LR: 1.4126340333e-06
+Epoch 1 | Step 57 | Loss: 10.556628 | LR: 1.4126340333e-06
+Epoch 1 | Step 58 | Loss: 10.601913 | LR: 1.4126340333e-06
+Epoch 1 | Step 59 | Loss: 11.119663 | LR: 1.4061834941e-06
+Epoch 1 | Step 60 | Loss: 10.668222 | LR: 1.4061834941e-06
+Epoch 1 | Step 61 | Loss: 10.491031 | LR: 1.4061834941e-06
+Epoch 1 | Step 62 | Loss: 10.398825 | LR: 1.4061834941e-06
+Epoch 1 | Step 63 | Loss: 10.574848 | LR: 1.3995190528e-06
+Epoch 1 | Step 64 | Loss: 11.075147 | LR: 1.3995190528e-06
+Epoch 1 | Step 65 | Loss: 10.525700 | LR: 1.3995190528e-06
+Epoch 1 | Step 66 | Loss: 10.255514 | LR: 1.3995190528e-06
+Epoch 1 | Step 67 | Loss: 10.603468 | LR: 1.3926428821e-06
+Epoch 1 | Step 68 | Loss: 10.455225 | LR: 1.3926428821e-06
+Epoch 1 | Step 69 | Loss: 11.094396 | LR: 1.3926428821e-06
+Epoch 1 | Step 70 | Loss: 10.860559 | LR: 1.3926428821e-06
+Epoch 1 | Step 71 | Loss: 10.813416 | LR: 1.3855572234e-06
+Epoch 1 | Step 72 | Loss: 10.035748 | LR: 1.3855572234e-06
+Epoch 1 | Step 73 | Loss: 9.801333 | LR: 1.3855572234e-06
+Epoch 1 | Step 74 | Loss: 10.265513 | LR: 1.3855572234e-06
+Epoch 1 | Step 75 | Loss: 10.601265 | LR: 1.3782643865e-06
+Epoch 1 | Step 76 | Loss: 9.732319 | LR: 1.3782643865e-06
+Epoch 1 | Step 77 | Loss: 10.633968 | LR: 1.3782643865e-06
+Epoch 1 | Step 78 | Loss: 10.728898 | LR: 1.3782643865e-06
+Epoch 1 | Step 79 | Loss: 10.757954 | LR: 1.3707667486e-06
+Epoch 1 | Step 80 | Loss: 10.697385 | LR: 1.3707667486e-06
+Epoch 1 | Step 81 | Loss: 10.158607 | LR: 1.3707667486e-06
+Epoch 1 | Step 82 | Loss: 9.994211 | LR: 1.3707667486e-06
+Epoch 1 | Step 83 | Loss: 10.720646 | LR: 1.3630667539e-06
+Epoch 1 | Step 84 | Loss: 9.976007 | LR: 1.3630667539e-06
+Epoch 1 | Step 85 | Loss: 10.142546 | LR: 1.3630667539e-06
+Epoch 1 | Step 86 | Loss: 10.418365 | LR: 1.3630667539e-06
+Epoch 1 | Step 87 | Loss: 9.769094 | LR: 1.3551669124e-06
+Epoch 1 | Step 88 | Loss: 9.987362 | LR: 1.3551669124e-06
+Epoch 1 | Step 89 | Loss: 10.741042 | LR: 1.3470697993e-06
+Starting inference for epoch 1: compare_root=/root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/compare_audio, test=/root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch1
+Loading checkpoint: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/checkpoints/checkpoint-epoch-1
+You are attempting to use Flash Attention 2 without specifying a torch dtype. This might lead to unexpected behaviour
+===== Generating compare3 =====
+Generating: epoch1_seen_style.wav
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/compare_audio/epoch1_seen_style.wav
+Generating: epoch1_unseen_short.wav
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/compare_audio/epoch1_unseen_short.wav
+Generating: epoch1_unseen_long.wav
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/compare_audio/epoch1_unseen_long.wav
+===== Reading test20 =====
+===== Generating test20 =====
+[1/20] Generating test_010.wav: 我已经收到你的邮件了。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch1/test_010.wav
+[2/20] Generating test_020.wav: 这家餐厅的菜很好吃。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch1/test_020.wav
+[3/20] Generating test_030.wav: 我准备回宿舍休息。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch1/test_030.wav
+[4/20] Generating test_040.wav: 希望今天能够顺利完成全部训练任务。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch1/test_040.wav
+[5/20] Generating test_050.wav: 你觉得这个方案怎么样？
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch1/test_050.wav
+[6/20] Generating test_060.wav: 这个效果太自然了！
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch1/test_060.wav
+[7/20] Generating test_070.wav: 今天温度是二十八摄氏度。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch1/test_070.wav
+[8/20] Generating test_080.wav: 多模态模型可以同时处理图像和文字。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch1/test_080.wav
+[9/20] Generating test_090.wav: 今天开始新的实验。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch1/test_090.wav
+[10/20] Generating test_100.wav: 希望我们的实验取得成功。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch1/test_100.wav
+[11/20] Generating test_110.wav: 量化考核、薪酬与业绩挂钩的机制。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch1/test_110.wav
+[12/20] Generating test_120.wav: 他只称太太亦很信任他。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch1/test_120.wav
+[13/20] Generating test_130.wav: 能否重现亚特兰大奥运会上的辉煌？
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch1/test_130.wav
+[14/20] Generating test_140.wav: 你银行卡里竟然还有钱？
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch1/test_140.wav
+[15/20] Generating test_150.wav: 抹布也是很有用的哟！
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch1/test_150.wav
+[16/20] Generating test_160.wav: 有什么心事吗？可以和我分享一下呀。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch1/test_160.wav
+[17/20] Generating test_170.wav: 其余的是斑胸草雀和枫鸟等种类。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch1/test_170.wav
+[18/20] Generating test_180.wav: 父亲说他无钱为儿操办婚事，打算去卖肾。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch1/test_180.wav
+[19/20] Generating test_190.wav: 网民们是否普遍受到过流氓软件的骚扰呢？
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch1/test_190.wav
+[20/20] Generating test_200.wav: 岁月荏苒，人生易老。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch1/test_200.wav
+Compare directory: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/compare_audio
+Test directory: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch1
+Done.
+Epoch 1 verification: all_wav=23, compare=3, test=20
+Epoch 1 inference verified; checkpoint deleted: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/checkpoints/checkpoint-epoch-1
+Epoch 2 | Step 0 | Loss: 9.784784 | LR: 1.3470697993e-06
+Epoch 2 | Step 1 | Loss: 10.173439 | LR: 1.3470697993e-06
+Epoch 2 | Step 2 | Loss: 9.692818 | LR: 1.3470697993e-06
+Epoch 2 | Step 3 | Loss: 10.582739 | LR: 1.3387780540e-06
+Epoch 2 | Step 4 | Loss: 9.799858 | LR: 1.3387780540e-06
+Epoch 2 | Step 5 | Loss: 9.681751 | LR: 1.3387780540e-06
+Epoch 2 | Step 6 | Loss: 10.492447 | LR: 1.3387780540e-06
+Epoch 2 | Step 7 | Loss: 9.828621 | LR: 1.3302943795e-06
+Epoch 2 | Step 8 | Loss: 9.621206 | LR: 1.3302943795e-06
+Epoch 2 | Step 9 | Loss: 10.212732 | LR: 1.3302943795e-06
+Epoch 2 | Step 10 | Loss: 10.514094 | LR: 1.3302943795e-06
+Epoch 2 | Step 11 | Loss: 10.136406 | LR: 1.3216215413e-06
+Epoch 2 | Step 12 | Loss: 10.352644 | LR: 1.3216215413e-06
+Epoch 2 | Step 13 | Loss: 9.630695 | LR: 1.3216215413e-06
+Epoch 2 | Step 14 | Loss: 9.444981 | LR: 1.3216215413e-06
+Epoch 2 | Step 15 | Loss: 9.839149 | LR: 1.3127623666e-06
+Epoch 2 | Step 16 | Loss: 9.450994 | LR: 1.3127623666e-06
+Epoch 2 | Step 17 | Loss: 9.628809 | LR: 1.3127623666e-06
+Epoch 2 | Step 18 | Loss: 9.931944 | LR: 1.3127623666e-06
+Epoch 2 | Step 19 | Loss: 9.770357 | LR: 1.3037197432e-06
+Epoch 2 | Step 20 | Loss: 9.121456 | LR: 1.3037197432e-06
+Epoch 2 | Step 21 | Loss: 9.343745 | LR: 1.3037197432e-06
+Epoch 2 | Step 22 | Loss: 9.134913 | LR: 1.3037197432e-06
+Epoch 2 | Step 23 | Loss: 9.464970 | LR: 1.2944966189e-06
+Epoch 2 | Step 24 | Loss: 9.116011 | LR: 1.2944966189e-06
+Epoch 2 | Step 25 | Loss: 10.424768 | LR: 1.2944966189e-06
+Epoch 2 | Step 26 | Loss: 9.344633 | LR: 1.2944966189e-06
+Epoch 2 | Step 27 | Loss: 10.059128 | LR: 1.2850960002e-06
+Epoch 2 | Step 28 | Loss: 9.866960 | LR: 1.2850960002e-06
+Epoch 2 | Step 29 | Loss: 9.568043 | LR: 1.2850960002e-06
+Epoch 2 | Step 30 | Loss: 9.288367 | LR: 1.2850960002e-06
+Epoch 2 | Step 31 | Loss: 8.887304 | LR: 1.2755209516e-06
+Epoch 2 | Step 32 | Loss: 9.363087 | LR: 1.2755209516e-06
+Epoch 2 | Step 33 | Loss: 9.857820 | LR: 1.2755209516e-06
+Epoch 2 | Step 34 | Loss: 8.944472 | LR: 1.2755209516e-06
+Epoch 2 | Step 35 | Loss: 10.592102 | LR: 1.2657745941e-06
+Epoch 2 | Step 36 | Loss: 10.123404 | LR: 1.2657745941e-06
+Epoch 2 | Step 37 | Loss: 9.762756 | LR: 1.2657745941e-06
+Epoch 2 | Step 38 | Loss: 9.626225 | LR: 1.2657745941e-06
+Epoch 2 | Step 39 | Loss: 10.073828 | LR: 1.2558601051e-06
+Epoch 2 | Step 40 | Loss: 9.910835 | LR: 1.2558601051e-06
+Epoch 2 | Step 41 | Loss: 9.946944 | LR: 1.2558601051e-06
+Epoch 2 | Step 42 | Loss: 9.688109 | LR: 1.2558601051e-06
+Epoch 2 | Step 43 | Loss: 9.537624 | LR: 1.2457807164e-06
+Epoch 2 | Step 44 | Loss: 9.772362 | LR: 1.2457807164e-06
+Epoch 2 | Step 45 | Loss: 9.654268 | LR: 1.2457807164e-06
+Epoch 2 | Step 46 | Loss: 9.722085 | LR: 1.2457807164e-06
+Epoch 2 | Step 47 | Loss: 9.383786 | LR: 1.2355397136e-06
+Epoch 2 | Step 48 | Loss: 9.143689 | LR: 1.2355397136e-06
+Epoch 2 | Step 49 | Loss: 9.995401 | LR: 1.2355397136e-06
+Epoch 2 | Step 50 | Loss: 9.587108 | LR: 1.2355397136e-06
+Epoch 2 | Step 51 | Loss: 10.076862 | LR: 1.2251404351e-06
+Epoch 2 | Step 52 | Loss: 9.640917 | LR: 1.2251404351e-06
+Epoch 2 | Step 53 | Loss: 9.511909 | LR: 1.2251404351e-06
+Epoch 2 | Step 54 | Loss: 9.623242 | LR: 1.2251404351e-06
+Epoch 2 | Step 55 | Loss: 9.460184 | LR: 1.2145862709e-06
+Epoch 2 | Step 56 | Loss: 9.632282 | LR: 1.2145862709e-06
+Epoch 2 | Step 57 | Loss: 9.185892 | LR: 1.2145862709e-06
+Epoch 2 | Step 58 | Loss: 9.579358 | LR: 1.2145862709e-06
+Epoch 2 | Step 59 | Loss: 9.839367 | LR: 1.2038806614e-06
+Epoch 2 | Step 60 | Loss: 9.330952 | LR: 1.2038806614e-06
+Epoch 2 | Step 61 | Loss: 9.824839 | LR: 1.2038806614e-06
+Epoch 2 | Step 62 | Loss: 9.581236 | LR: 1.2038806614e-06
+Epoch 2 | Step 63 | Loss: 9.165659 | LR: 1.1930270964e-06
+Epoch 2 | Step 64 | Loss: 9.453264 | LR: 1.1930270964e-06
+Epoch 2 | Step 65 | Loss: 8.899827 | LR: 1.1930270964e-06
+Epoch 2 | Step 66 | Loss: 9.580951 | LR: 1.1930270964e-06
+Epoch 2 | Step 67 | Loss: 9.905169 | LR: 1.1820291139e-06
+Epoch 2 | Step 68 | Loss: 9.537600 | LR: 1.1820291139e-06
+Epoch 2 | Step 69 | Loss: 9.337724 | LR: 1.1820291139e-06
+Epoch 2 | Step 70 | Loss: 8.979752 | LR: 1.1820291139e-06
+Epoch 2 | Step 71 | Loss: 9.144941 | LR: 1.1708902990e-06
+Epoch 2 | Step 72 | Loss: 9.508568 | LR: 1.1708902990e-06
+Epoch 2 | Step 73 | Loss: 9.616751 | LR: 1.1708902990e-06
+Epoch 2 | Step 74 | Loss: 9.622274 | LR: 1.1708902990e-06
+Epoch 2 | Step 75 | Loss: 9.727253 | LR: 1.1596142828e-06
+Epoch 2 | Step 76 | Loss: 9.118154 | LR: 1.1596142828e-06
+Epoch 2 | Step 77 | Loss: 9.084855 | LR: 1.1596142828e-06
+Epoch 2 | Step 78 | Loss: 8.519012 | LR: 1.1596142828e-06
+Epoch 2 | Step 79 | Loss: 8.722777 | LR: 1.1482047410e-06
+Epoch 2 | Step 80 | Loss: 8.627041 | LR: 1.1482047410e-06
+Epoch 2 | Step 81 | Loss: 8.900268 | LR: 1.1482047410e-06
+Epoch 2 | Step 82 | Loss: 9.240674 | LR: 1.1482047410e-06
+Epoch 2 | Step 83 | Loss: 9.294365 | LR: 1.1366653929e-06
+Epoch 2 | Step 84 | Loss: 9.436477 | LR: 1.1366653929e-06
+Epoch 2 | Step 85 | Loss: 9.343960 | LR: 1.1366653929e-06
+Epoch 2 | Step 86 | Loss: 9.550154 | LR: 1.1366653929e-06
+Epoch 2 | Step 87 | Loss: 9.355054 | LR: 1.1250000000e-06
+Epoch 2 | Step 88 | Loss: 8.878871 | LR: 1.1250000000e-06
+Epoch 2 | Step 89 | Loss: 8.926394 | LR: 1.1132123650e-06
+Starting inference for epoch 2: compare_root=/root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/compare_audio, test=/root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch2
+Loading checkpoint: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/checkpoints/checkpoint-epoch-2
+You are attempting to use Flash Attention 2 without specifying a torch dtype. This might lead to unexpected behaviour
+===== Generating compare3 =====
+Generating: epoch2_seen_style.wav
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/compare_audio/epoch2_seen_style.wav
+Generating: epoch2_unseen_short.wav
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/compare_audio/epoch2_unseen_short.wav
+Generating: epoch2_unseen_long.wav
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/compare_audio/epoch2_unseen_long.wav
+===== Reading test20 =====
+===== Generating test20 =====
+[1/20] Generating test_010.wav: 我已经收到你的邮件了。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch2/test_010.wav
+[2/20] Generating test_020.wav: 这家餐厅的菜很好吃。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch2/test_020.wav
+[3/20] Generating test_030.wav: 我准备回宿舍休息。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch2/test_030.wav
+[4/20] Generating test_040.wav: 希望今天能够顺利完成全部训练任务。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch2/test_040.wav
+[5/20] Generating test_050.wav: 你觉得这个方案怎么样？
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch2/test_050.wav
+[6/20] Generating test_060.wav: 这个效果太自然了！
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch2/test_060.wav
+[7/20] Generating test_070.wav: 今天温度是二十八摄氏度。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch2/test_070.wav
+[8/20] Generating test_080.wav: 多模态模型可以同时处理图像和文字。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch2/test_080.wav
+[9/20] Generating test_090.wav: 今天开始新的实验。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch2/test_090.wav
+[10/20] Generating test_100.wav: 希望我们的实验取得成功。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch2/test_100.wav
+[11/20] Generating test_110.wav: 量化考核、薪酬与业绩挂钩的机制。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch2/test_110.wav
+[12/20] Generating test_120.wav: 他只称太太亦很信任他。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch2/test_120.wav
+[13/20] Generating test_130.wav: 能否重现亚特兰大奥运会上的辉煌？
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch2/test_130.wav
+[14/20] Generating test_140.wav: 你银行卡里竟然还有钱？
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch2/test_140.wav
+[15/20] Generating test_150.wav: 抹布也是很有用的哟！
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch2/test_150.wav
+[16/20] Generating test_160.wav: 有什么心事吗？可以和我分享一下呀。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch2/test_160.wav
+[17/20] Generating test_170.wav: 其余的是斑胸草雀和枫鸟等种类。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch2/test_170.wav
+[18/20] Generating test_180.wav: 父亲说他无钱为儿操办婚事，打算去卖肾。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch2/test_180.wav
+[19/20] Generating test_190.wav: 网民们是否普遍受到过流氓软件的骚扰呢？
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch2/test_190.wav
+[20/20] Generating test_200.wav: 岁月荏苒，人生易老。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch2/test_200.wav
+Compare directory: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/compare_audio
+Test directory: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch2
+Done.
+Epoch 2 verification: all_wav=23, compare=3, test=20
+Epoch 2 inference verified; checkpoint deleted: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/checkpoints/checkpoint-epoch-2
+Epoch 3 | Step 0 | Loss: 8.767210 | LR: 1.1132123650e-06
+Epoch 3 | Step 1 | Loss: 9.169285 | LR: 1.1132123650e-06
+Epoch 3 | Step 2 | Loss: 8.893250 | LR: 1.1132123650e-06
+Epoch 3 | Step 3 | Loss: 8.566568 | LR: 1.1013063305e-06
+Epoch 3 | Step 4 | Loss: 9.201722 | LR: 1.1013063305e-06
+Epoch 3 | Step 5 | Loss: 9.155451 | LR: 1.1013063305e-06
+Epoch 3 | Step 6 | Loss: 9.089866 | LR: 1.1013063305e-06
+Epoch 3 | Step 7 | Loss: 8.790112 | LR: 1.0892857776e-06
+Epoch 3 | Step 8 | Loss: 9.108008 | LR: 1.0892857776e-06
+Epoch 3 | Step 9 | Loss: 9.661273 | LR: 1.0892857776e-06
+Epoch 3 | Step 10 | Loss: 9.123789 | LR: 1.0892857776e-06
+Epoch 3 | Step 11 | Loss: 9.013572 | LR: 1.0771546246e-06
+Epoch 3 | Step 12 | Loss: 9.152806 | LR: 1.0771546246e-06
+Epoch 3 | Step 13 | Loss: 8.651104 | LR: 1.0771546246e-06
+Epoch 3 | Step 14 | Loss: 9.458811 | LR: 1.0771546246e-06
+Epoch 3 | Step 15 | Loss: 8.663235 | LR: 1.0649168262e-06
+Epoch 3 | Step 16 | Loss: 8.747095 | LR: 1.0649168262e-06
+Epoch 3 | Step 17 | Loss: 8.825254 | LR: 1.0649168262e-06
+Epoch 3 | Step 18 | Loss: 8.608921 | LR: 1.0649168262e-06
+Epoch 3 | Step 19 | Loss: 8.772778 | LR: 1.0525763715e-06
+Epoch 3 | Step 20 | Loss: 8.924492 | LR: 1.0525763715e-06
+Epoch 3 | Step 21 | Loss: 9.284222 | LR: 1.0525763715e-06
+Epoch 3 | Step 22 | Loss: 9.260051 | LR: 1.0525763715e-06
+Epoch 3 | Step 23 | Loss: 9.213548 | LR: 1.0401372833e-06
+Epoch 3 | Step 24 | Loss: 9.075793 | LR: 1.0401372833e-06
+Epoch 3 | Step 25 | Loss: 9.431625 | LR: 1.0401372833e-06
+Epoch 3 | Step 26 | Loss: 8.239716 | LR: 1.0401372833e-06
+Epoch 3 | Step 27 | Loss: 9.251424 | LR: 1.0276036165e-06
+Epoch 3 | Step 28 | Loss: 8.759014 | LR: 1.0276036165e-06
+Epoch 3 | Step 29 | Loss: 9.640817 | LR: 1.0276036165e-06
+Epoch 3 | Step 30 | Loss: 9.121450 | LR: 1.0276036165e-06
+Epoch 3 | Step 31 | Loss: 8.837502 | LR: 1.0149794568e-06
+Epoch 3 | Step 32 | Loss: 9.114662 | LR: 1.0149794568e-06
+Epoch 3 | Step 33 | Loss: 8.899181 | LR: 1.0149794568e-06
+Epoch 3 | Step 34 | Loss: 9.077516 | LR: 1.0149794568e-06
+Epoch 3 | Step 35 | Loss: 8.766108 | LR: 1.0022689194e-06
+Epoch 3 | Step 36 | Loss: 8.811909 | LR: 1.0022689194e-06
+Epoch 3 | Step 37 | Loss: 8.082888 | LR: 1.0022689194e-06
+Epoch 3 | Step 38 | Loss: 8.974524 | LR: 1.0022689194e-06
+Epoch 3 | Step 39 | Loss: 9.067039 | LR: 9.8947614760e-07
+Epoch 3 | Step 40 | Loss: 8.674244 | LR: 9.8947614760e-07
+Epoch 3 | Step 41 | Loss: 9.128149 | LR: 9.8947614760e-07
+Epoch 3 | Step 42 | Loss: 9.192332 | LR: 9.8947614760e-07
+Epoch 3 | Step 43 | Loss: 9.359016 | LR: 9.7660531168e-07
+Epoch 3 | Step 44 | Loss: 8.646608 | LR: 9.7660531168e-07
+Epoch 3 | Step 45 | Loss: 9.048294 | LR: 9.7660531168e-07
+Epoch 3 | Step 46 | Loss: 8.885784 | LR: 9.7660531168e-07
+Epoch 3 | Step 47 | Loss: 8.804333 | LR: 9.6366060721e-07
+Epoch 3 | Step 48 | Loss: 9.209806 | LR: 9.6366060721e-07
+Epoch 3 | Step 49 | Loss: 9.102789 | LR: 9.6366060721e-07
+Epoch 3 | Step 50 | Loss: 9.163900 | LR: 9.6366060721e-07
+Epoch 3 | Step 51 | Loss: 9.505924 | LR: 9.5064625390e-07
+Epoch 3 | Step 52 | Loss: 8.987937 | LR: 9.5064625390e-07
+Epoch 3 | Step 53 | Loss: 8.467575 | LR: 9.5064625390e-07
+Epoch 3 | Step 54 | Loss: 9.259933 | LR: 9.5064625390e-07
+Epoch 3 | Step 55 | Loss: 8.670999 | LR: 9.3756649415e-07
+Epoch 3 | Step 56 | Loss: 8.652805 | LR: 9.3756649415e-07
+Epoch 3 | Step 57 | Loss: 8.630386 | LR: 9.3756649415e-07
+Epoch 3 | Step 58 | Loss: 9.112500 | LR: 9.3756649415e-07
+Epoch 3 | Step 59 | Loss: 9.104018 | LR: 9.2442559168e-07
+Epoch 3 | Step 60 | Loss: 9.160148 | LR: 9.2442559168e-07
+Epoch 3 | Step 61 | Loss: 8.432604 | LR: 9.2442559168e-07
+Epoch 3 | Step 62 | Loss: 8.126801 | LR: 9.2442559168e-07
+Epoch 3 | Step 63 | Loss: 9.092505 | LR: 9.1122783016e-07
+Epoch 3 | Step 64 | Loss: 8.925326 | LR: 9.1122783016e-07
+Epoch 3 | Step 65 | Loss: 8.947917 | LR: 9.1122783016e-07
+Epoch 3 | Step 66 | Loss: 8.639269 | LR: 9.1122783016e-07
+Epoch 3 | Step 67 | Loss: 8.813568 | LR: 8.9797751177e-07
+Epoch 3 | Step 68 | Loss: 8.720652 | LR: 8.9797751177e-07
+Epoch 3 | Step 69 | Loss: 9.121336 | LR: 8.9797751177e-07
+Epoch 3 | Step 70 | Loss: 9.415338 | LR: 8.9797751177e-07
+Epoch 3 | Step 71 | Loss: 8.928078 | LR: 8.8467895584e-07
+Epoch 3 | Step 72 | Loss: 8.598800 | LR: 8.8467895584e-07
+Epoch 3 | Step 73 | Loss: 8.876099 | LR: 8.8467895584e-07
+Epoch 3 | Step 74 | Loss: 9.016092 | LR: 8.8467895584e-07
+Epoch 3 | Step 75 | Loss: 8.954975 | LR: 8.7133649741e-07
+Epoch 3 | Step 76 | Loss: 8.471315 | LR: 8.7133649741e-07
+Epoch 3 | Step 77 | Loss: 8.734172 | LR: 8.7133649741e-07
+Epoch 3 | Step 78 | Loss: 9.158621 | LR: 8.7133649741e-07
+Epoch 3 | Step 79 | Loss: 8.671203 | LR: 8.5795448586e-07
+Epoch 3 | Step 80 | Loss: 8.597441 | LR: 8.5795448586e-07
+Epoch 3 | Step 81 | Loss: 9.116430 | LR: 8.5795448586e-07
+Epoch 3 | Step 82 | Loss: 9.024697 | LR: 8.5795448586e-07
+Epoch 3 | Step 83 | Loss: 8.389997 | LR: 8.4453728342e-07
+Epoch 3 | Step 84 | Loss: 8.250053 | LR: 8.4453728342e-07
+Epoch 3 | Step 85 | Loss: 8.764030 | LR: 8.4453728342e-07
+Epoch 3 | Step 86 | Loss: 8.743062 | LR: 8.4453728342e-07
+Epoch 3 | Step 87 | Loss: 8.684166 | LR: 8.3108926382e-07
+Epoch 3 | Step 88 | Loss: 9.002714 | LR: 8.3108926382e-07
+Epoch 3 | Step 89 | Loss: 9.098534 | LR: 8.1761481083e-07
+Starting inference for epoch 3: compare_root=/root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/compare_audio, test=/root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch3
+Loading checkpoint: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/checkpoints/checkpoint-epoch-3
+You are attempting to use Flash Attention 2 without specifying a torch dtype. This might lead to unexpected behaviour
+===== Generating compare3 =====
+Generating: epoch3_seen_style.wav
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/compare_audio/epoch3_seen_style.wav
+Generating: epoch3_unseen_short.wav
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/compare_audio/epoch3_unseen_short.wav
+Generating: epoch3_unseen_long.wav
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/compare_audio/epoch3_unseen_long.wav
+===== Reading test20 =====
+===== Generating test20 =====
+[1/20] Generating test_010.wav: 我已经收到你的邮件了。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch3/test_010.wav
+[2/20] Generating test_020.wav: 这家餐厅的菜很好吃。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch3/test_020.wav
+[3/20] Generating test_030.wav: 我准备回宿舍休息。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch3/test_030.wav
+[4/20] Generating test_040.wav: 希望今天能够顺利完成全部训练任务。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch3/test_040.wav
+[5/20] Generating test_050.wav: 你觉得这个方案怎么样？
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch3/test_050.wav
+[6/20] Generating test_060.wav: 这个效果太自然了！
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch3/test_060.wav
+[7/20] Generating test_070.wav: 今天温度是二十八摄氏度。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch3/test_070.wav
+[8/20] Generating test_080.wav: 多模态模型可以同时处理图像和文字。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch3/test_080.wav
+[9/20] Generating test_090.wav: 今天开始新的实验。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch3/test_090.wav
+[10/20] Generating test_100.wav: 希望我们的实验取得成功。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch3/test_100.wav
+[11/20] Generating test_110.wav: 量化考核、薪酬与业绩挂钩的机制。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch3/test_110.wav
+[12/20] Generating test_120.wav: 他只称太太亦很信任他。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch3/test_120.wav
+[13/20] Generating test_130.wav: 能否重现亚特兰大奥运会上的辉煌？
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch3/test_130.wav
+[14/20] Generating test_140.wav: 你银行卡里竟然还有钱？
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch3/test_140.wav
+[15/20] Generating test_150.wav: 抹布也是很有用的哟！
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch3/test_150.wav
+[16/20] Generating test_160.wav: 有什么心事吗？可以和我分享一下呀。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch3/test_160.wav
+[17/20] Generating test_170.wav: 其余的是斑胸草雀和枫鸟等种类。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch3/test_170.wav
+[18/20] Generating test_180.wav: 父亲说他无钱为儿操办婚事，打算去卖肾。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch3/test_180.wav
+[19/20] Generating test_190.wav: 网民们是否普遍受到过流氓软件的骚扰呢？
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch3/test_190.wav
+[20/20] Generating test_200.wav: 岁月荏苒，人生易老。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch3/test_200.wav
+Compare directory: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/compare_audio
+Test directory: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch3
+Done.
+Epoch 3 verification: all_wav=23, compare=3, test=20
+Epoch 3 inference verified; checkpoint deleted: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/checkpoints/checkpoint-epoch-3
+Epoch 4 | Step 0 | Loss: 8.646908 | LR: 8.1761481083e-07
+Epoch 4 | Step 1 | Loss: 8.485403 | LR: 8.1761481083e-07
+Epoch 4 | Step 2 | Loss: 8.677419 | LR: 8.1761481083e-07
+Epoch 4 | Step 3 | Loss: 8.351056 | LR: 8.0411831685e-07
+Epoch 4 | Step 4 | Loss: 8.943290 | LR: 8.0411831685e-07
+Epoch 4 | Step 5 | Loss: 8.296758 | LR: 8.0411831685e-07
+Epoch 4 | Step 6 | Loss: 8.302096 | LR: 8.0411831685e-07
+Epoch 4 | Step 7 | Loss: 9.027563 | LR: 7.9060418144e-07
+Epoch 4 | Step 8 | Loss: 8.053919 | LR: 7.9060418144e-07
+Epoch 4 | Step 9 | Loss: 8.249666 | LR: 7.9060418144e-07
+Epoch 4 | Step 10 | Loss: 8.904176 | LR: 7.9060418144e-07
+Epoch 4 | Step 11 | Loss: 9.281629 | LR: 7.7707680992e-07
+Epoch 4 | Step 12 | Loss: 8.794387 | LR: 7.7707680992e-07
+Epoch 4 | Step 13 | Loss: 9.339203 | LR: 7.7707680992e-07
+Epoch 4 | Step 14 | Loss: 8.733773 | LR: 7.7707680992e-07
+Epoch 4 | Step 15 | Loss: 8.770418 | LR: 7.6354061194e-07
+Epoch 4 | Step 16 | Loss: 8.435187 | LR: 7.6354061194e-07
+Epoch 4 | Step 17 | Loss: 8.115012 | LR: 7.6354061194e-07
+Epoch 4 | Step 18 | Loss: 8.910182 | LR: 7.6354061194e-07
+Epoch 4 | Step 19 | Loss: 8.691446 | LR: 7.5000000000e-07
+Epoch 4 | Step 20 | Loss: 8.808243 | LR: 7.5000000000e-07
+Epoch 4 | Step 21 | Loss: 8.843783 | LR: 7.5000000000e-07
+Epoch 4 | Step 22 | Loss: 8.383970 | LR: 7.5000000000e-07
+Epoch 4 | Step 23 | Loss: 8.598534 | LR: 7.3645938806e-07
+Epoch 4 | Step 24 | Loss: 8.758551 | LR: 7.3645938806e-07
+Epoch 4 | Step 25 | Loss: 8.856163 | LR: 7.3645938806e-07
+Epoch 4 | Step 26 | Loss: 8.728914 | LR: 7.3645938806e-07
+Epoch 4 | Step 27 | Loss: 8.987064 | LR: 7.2292319008e-07
+Epoch 4 | Step 28 | Loss: 8.569364 | LR: 7.2292319008e-07
+Epoch 4 | Step 29 | Loss: 8.849408 | LR: 7.2292319008e-07
+Epoch 4 | Step 30 | Loss: 8.607609 | LR: 7.2292319008e-07
+Epoch 4 | Step 31 | Loss: 8.236233 | LR: 7.0939581856e-07
+Epoch 4 | Step 32 | Loss: 8.845268 | LR: 7.0939581856e-07
+Epoch 4 | Step 33 | Loss: 8.264550 | LR: 7.0939581856e-07
+Epoch 4 | Step 34 | Loss: 9.279275 | LR: 7.0939581856e-07
+Epoch 4 | Step 35 | Loss: 9.126152 | LR: 6.9588168315e-07
+Epoch 4 | Step 36 | Loss: 8.684388 | LR: 6.9588168315e-07
+Epoch 4 | Step 37 | Loss: 8.607909 | LR: 6.9588168315e-07
+Epoch 4 | Step 38 | Loss: 8.142757 | LR: 6.9588168315e-07
+Epoch 4 | Step 39 | Loss: 8.265501 | LR: 6.8238518917e-07
+Epoch 4 | Step 40 | Loss: 8.937499 | LR: 6.8238518917e-07
+Epoch 4 | Step 41 | Loss: 8.557491 | LR: 6.8238518917e-07
+Epoch 4 | Step 42 | Loss: 8.327907 | LR: 6.8238518917e-07
+Epoch 4 | Step 43 | Loss: 8.807018 | LR: 6.6891073618e-07
+Epoch 4 | Step 44 | Loss: 8.689434 | LR: 6.6891073618e-07
+Epoch 4 | Step 45 | Loss: 8.778084 | LR: 6.6891073618e-07
+Epoch 4 | Step 46 | Loss: 8.516710 | LR: 6.6891073618e-07
+Epoch 4 | Step 47 | Loss: 8.459889 | LR: 6.5546271658e-07
+Epoch 4 | Step 48 | Loss: 8.954754 | LR: 6.5546271658e-07
+Epoch 4 | Step 49 | Loss: 8.164351 | LR: 6.5546271658e-07
+Epoch 4 | Step 50 | Loss: 8.829294 | LR: 6.5546271658e-07
+Epoch 4 | Step 51 | Loss: 8.708467 | LR: 6.4204551414e-07
+Epoch 4 | Step 52 | Loss: 8.910437 | LR: 6.4204551414e-07
+Epoch 4 | Step 53 | Loss: 8.519350 | LR: 6.4204551414e-07
+Epoch 4 | Step 54 | Loss: 9.059399 | LR: 6.4204551414e-07
+Epoch 4 | Step 55 | Loss: 8.919657 | LR: 6.2866350259e-07
+Epoch 4 | Step 56 | Loss: 8.789604 | LR: 6.2866350259e-07
+Epoch 4 | Step 57 | Loss: 9.034659 | LR: 6.2866350259e-07
+Epoch 4 | Step 58 | Loss: 8.653077 | LR: 6.2866350259e-07
+Epoch 4 | Step 59 | Loss: 9.207196 | LR: 6.1532104416e-07
+Epoch 4 | Step 60 | Loss: 8.960045 | LR: 6.1532104416e-07
+Epoch 4 | Step 61 | Loss: 8.338727 | LR: 6.1532104416e-07
+Epoch 4 | Step 62 | Loss: 8.903395 | LR: 6.1532104416e-07
+Epoch 4 | Step 63 | Loss: 8.871870 | LR: 6.0202248823e-07
+Epoch 4 | Step 64 | Loss: 8.589059 | LR: 6.0202248823e-07
+Epoch 4 | Step 65 | Loss: 8.405262 | LR: 6.0202248823e-07
+Epoch 4 | Step 66 | Loss: 8.577128 | LR: 6.0202248823e-07
+Epoch 4 | Step 67 | Loss: 8.459812 | LR: 5.8877216984e-07
+Epoch 4 | Step 68 | Loss: 8.254568 | LR: 5.8877216984e-07
+Epoch 4 | Step 69 | Loss: 8.552050 | LR: 5.8877216984e-07
+Epoch 4 | Step 70 | Loss: 9.087798 | LR: 5.8877216984e-07
+Epoch 4 | Step 71 | Loss: 8.734990 | LR: 5.7557440832e-07
+Epoch 4 | Step 72 | Loss: 8.229374 | LR: 5.7557440832e-07
+Epoch 4 | Step 73 | Loss: 8.512623 | LR: 5.7557440832e-07
+Epoch 4 | Step 74 | Loss: 8.767345 | LR: 5.7557440832e-07
+Epoch 4 | Step 75 | Loss: 8.504842 | LR: 5.6243350585e-07
+Epoch 4 | Step 76 | Loss: 7.804097 | LR: 5.6243350585e-07
+Epoch 4 | Step 77 | Loss: 8.811695 | LR: 5.6243350585e-07
+Epoch 4 | Step 78 | Loss: 9.013109 | LR: 5.6243350585e-07
+Epoch 4 | Step 79 | Loss: 7.643229 | LR: 5.4935374610e-07
+Epoch 4 | Step 80 | Loss: 8.428560 | LR: 5.4935374610e-07
+Epoch 4 | Step 81 | Loss: 8.093384 | LR: 5.4935374610e-07
+Epoch 4 | Step 82 | Loss: 8.387648 | LR: 5.4935374610e-07
+Epoch 4 | Step 83 | Loss: 8.544204 | LR: 5.3633939279e-07
+Epoch 4 | Step 84 | Loss: 8.761084 | LR: 5.3633939279e-07
+Epoch 4 | Step 85 | Loss: 8.976523 | LR: 5.3633939279e-07
+Epoch 4 | Step 86 | Loss: 8.495045 | LR: 5.3633939279e-07
+Epoch 4 | Step 87 | Loss: 8.519279 | LR: 5.2339468832e-07
+Epoch 4 | Step 88 | Loss: 8.617109 | LR: 5.2339468832e-07
+Epoch 4 | Step 89 | Loss: 8.914177 | LR: 5.1052385240e-07
+Starting inference for epoch 4: compare_root=/root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/compare_audio, test=/root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch4
+Loading checkpoint: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/checkpoints/checkpoint-epoch-4
+You are attempting to use Flash Attention 2 without specifying a torch dtype. This might lead to unexpected behaviour
+===== Generating compare3 =====
+Generating: epoch4_seen_style.wav
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/compare_audio/epoch4_seen_style.wav
+Generating: epoch4_unseen_short.wav
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/compare_audio/epoch4_unseen_short.wav
+Generating: epoch4_unseen_long.wav
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/compare_audio/epoch4_unseen_long.wav
+===== Reading test20 =====
+===== Generating test20 =====
+[1/20] Generating test_010.wav: 我已经收到你的邮件了。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch4/test_010.wav
+[2/20] Generating test_020.wav: 这家餐厅的菜很好吃。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch4/test_020.wav
+[3/20] Generating test_030.wav: 我准备回宿舍休息。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch4/test_030.wav
+[4/20] Generating test_040.wav: 希望今天能够顺利完成全部训练任务。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch4/test_040.wav
+[5/20] Generating test_050.wav: 你觉得这个方案怎么样？
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch4/test_050.wav
+[6/20] Generating test_060.wav: 这个效果太自然了！
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch4/test_060.wav
+[7/20] Generating test_070.wav: 今天温度是二十八摄氏度。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch4/test_070.wav
+[8/20] Generating test_080.wav: 多模态模型可以同时处理图像和文字。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch4/test_080.wav
+[9/20] Generating test_090.wav: 今天开始新的实验。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch4/test_090.wav
+[10/20] Generating test_100.wav: 希望我们的实验取得成功。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch4/test_100.wav
+[11/20] Generating test_110.wav: 量化考核、薪酬与业绩挂钩的机制。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch4/test_110.wav
+[12/20] Generating test_120.wav: 他只称太太亦很信任他。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch4/test_120.wav
+[13/20] Generating test_130.wav: 能否重现亚特兰大奥运会上的辉煌？
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch4/test_130.wav
+[14/20] Generating test_140.wav: 你银行卡里竟然还有钱？
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch4/test_140.wav
+[15/20] Generating test_150.wav: 抹布也是很有用的哟！
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch4/test_150.wav
+[16/20] Generating test_160.wav: 有什么心事吗？可以和我分享一下呀。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch4/test_160.wav
+[17/20] Generating test_170.wav: 其余的是斑胸草雀和枫鸟等种类。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch4/test_170.wav
+[18/20] Generating test_180.wav: 父亲说他无钱为儿操办婚事，打算去卖肾。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch4/test_180.wav
+[19/20] Generating test_190.wav: 网民们是否普遍受到过流氓软件的骚扰呢？
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch4/test_190.wav
+[20/20] Generating test_200.wav: 岁月荏苒，人生易老。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch4/test_200.wav
+Compare directory: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/compare_audio
+Test directory: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch4
+Done.
+Epoch 4 verification: all_wav=23, compare=3, test=20
+Epoch 4 inference verified; checkpoint deleted: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/checkpoints/checkpoint-epoch-4
+Epoch 5 | Step 0 | Loss: 8.661512 | LR: 5.1052385240e-07
+Epoch 5 | Step 1 | Loss: 8.762524 | LR: 5.1052385240e-07
+Epoch 5 | Step 2 | Loss: 8.738775 | LR: 5.1052385240e-07
+Epoch 5 | Step 3 | Loss: 8.682405 | LR: 4.9773108064e-07
+Epoch 5 | Step 4 | Loss: 8.588551 | LR: 4.9773108064e-07
+Epoch 5 | Step 5 | Loss: 8.661140 | LR: 4.9773108064e-07
+Epoch 5 | Step 6 | Loss: 8.612257 | LR: 4.9773108064e-07
+Epoch 5 | Step 7 | Loss: 8.785061 | LR: 4.8502054321e-07
+Epoch 5 | Step 8 | Loss: 8.923809 | LR: 4.8502054321e-07
+Epoch 5 | Step 9 | Loss: 9.118254 | LR: 4.8502054321e-07
+Epoch 5 | Step 10 | Loss: 8.674330 | LR: 4.8502054321e-07
+Epoch 5 | Step 11 | Loss: 8.345525 | LR: 4.7239638350e-07
+Epoch 5 | Step 12 | Loss: 8.356422 | LR: 4.7239638350e-07
+Epoch 5 | Step 13 | Loss: 8.808243 | LR: 4.7239638350e-07
+Epoch 5 | Step 14 | Loss: 8.726477 | LR: 4.7239638350e-07
+Epoch 5 | Step 15 | Loss: 8.539190 | LR: 4.5986271669e-07
+Epoch 5 | Step 16 | Loss: 8.792951 | LR: 4.5986271669e-07
+Epoch 5 | Step 17 | Loss: 8.453535 | LR: 4.5986271669e-07
+Epoch 5 | Step 18 | Loss: 8.109694 | LR: 4.5986271669e-07
+Epoch 5 | Step 19 | Loss: 7.761002 | LR: 4.4742362851e-07
+Epoch 5 | Step 20 | Loss: 8.969267 | LR: 4.4742362851e-07
+Epoch 5 | Step 21 | Loss: 8.684475 | LR: 4.4742362851e-07
+Epoch 5 | Step 22 | Loss: 8.227089 | LR: 4.4742362851e-07
+Epoch 5 | Step 23 | Loss: 8.471451 | LR: 4.3508317383e-07
+Epoch 5 | Step 24 | Loss: 8.934882 | LR: 4.3508317383e-07
+Epoch 5 | Step 25 | Loss: 8.219030 | LR: 4.3508317383e-07
+Epoch 5 | Step 26 | Loss: 8.267490 | LR: 4.3508317383e-07
+Epoch 5 | Step 27 | Loss: 8.475510 | LR: 4.2284537538e-07
+Epoch 5 | Step 28 | Loss: 9.006211 | LR: 4.2284537538e-07
+Epoch 5 | Step 29 | Loss: 8.617903 | LR: 4.2284537538e-07
+Epoch 5 | Step 30 | Loss: 8.396004 | LR: 4.2284537538e-07
+Epoch 5 | Step 31 | Loss: 8.515749 | LR: 4.1071422243e-07
+Epoch 5 | Step 32 | Loss: 8.285272 | LR: 4.1071422243e-07
+Epoch 5 | Step 33 | Loss: 8.720338 | LR: 4.1071422243e-07
+Epoch 5 | Step 34 | Loss: 8.891277 | LR: 4.1071422243e-07
+Epoch 5 | Step 35 | Loss: 8.252333 | LR: 3.9869366948e-07
+Epoch 5 | Step 36 | Loss: 8.415852 | LR: 3.9869366948e-07
+Epoch 5 | Step 37 | Loss: 8.915621 | LR: 3.9869366948e-07
+Epoch 5 | Step 38 | Loss: 8.630730 | LR: 3.9869366948e-07
+Epoch 5 | Step 39 | Loss: 8.079220 | LR: 3.8678763496e-07
+Epoch 5 | Step 40 | Loss: 8.951722 | LR: 3.8678763496e-07
+Epoch 5 | Step 41 | Loss: 8.360868 | LR: 3.8678763496e-07
+Epoch 5 | Step 42 | Loss: 8.647308 | LR: 3.8678763496e-07
+Epoch 5 | Step 43 | Loss: 8.611696 | LR: 3.7500000000e-07
+Epoch 5 | Step 44 | Loss: 8.745428 | LR: 3.7500000000e-07
+Epoch 5 | Step 45 | Loss: 8.731339 | LR: 3.7500000000e-07
+Epoch 5 | Step 46 | Loss: 8.501045 | LR: 3.7500000000e-07
+Epoch 5 | Step 47 | Loss: 8.841557 | LR: 3.6333460712e-07
+Epoch 5 | Step 48 | Loss: 8.024719 | LR: 3.6333460712e-07
+Epoch 5 | Step 49 | Loss: 8.519087 | LR: 3.6333460712e-07
+Epoch 5 | Step 50 | Loss: 8.695770 | LR: 3.6333460712e-07
+Epoch 5 | Step 51 | Loss: 8.195910 | LR: 3.5179525898e-07
+Epoch 5 | Step 52 | Loss: 8.267876 | LR: 3.5179525898e-07
+Epoch 5 | Step 53 | Loss: 9.143838 | LR: 3.5179525898e-07
+Epoch 5 | Step 54 | Loss: 8.789604 | LR: 3.5179525898e-07
+Epoch 5 | Step 55 | Loss: 7.922331 | LR: 3.4038571718e-07
+Epoch 5 | Step 56 | Loss: 8.432614 | LR: 3.4038571718e-07
+Epoch 5 | Step 57 | Loss: 8.518044 | LR: 3.4038571718e-07
+Epoch 5 | Step 58 | Loss: 8.693478 | LR: 3.4038571718e-07
+Epoch 5 | Step 59 | Loss: 8.602766 | LR: 3.2910970098e-07
+Epoch 5 | Step 60 | Loss: 8.596301 | LR: 3.2910970098e-07
+Epoch 5 | Step 61 | Loss: 8.298908 | LR: 3.2910970098e-07
+Epoch 5 | Step 62 | Loss: 8.342102 | LR: 3.2910970098e-07
+Epoch 5 | Step 63 | Loss: 8.836279 | LR: 3.1797088612e-07
+Epoch 5 | Step 64 | Loss: 8.232084 | LR: 3.1797088612e-07
+Epoch 5 | Step 65 | Loss: 7.933343 | LR: 3.1797088612e-07
+Epoch 5 | Step 66 | Loss: 8.095554 | LR: 3.1797088612e-07
+Epoch 5 | Step 67 | Loss: 8.971343 | LR: 3.0697290363e-07
+Epoch 5 | Step 68 | Loss: 8.290612 | LR: 3.0697290363e-07
+Epoch 5 | Step 69 | Loss: 8.308046 | LR: 3.0697290363e-07
+Epoch 5 | Step 70 | Loss: 8.346534 | LR: 3.0697290363e-07
+Epoch 5 | Step 71 | Loss: 8.665680 | LR: 2.9611933860e-07
+Epoch 5 | Step 72 | Loss: 8.732471 | LR: 2.9611933860e-07
+Epoch 5 | Step 73 | Loss: 8.887009 | LR: 2.9611933860e-07
+Epoch 5 | Step 74 | Loss: 8.743908 | LR: 2.9611933860e-07
+Epoch 5 | Step 75 | Loss: 9.018849 | LR: 2.8541372909e-07
+Epoch 5 | Step 76 | Loss: 8.553272 | LR: 2.8541372909e-07
+Epoch 5 | Step 77 | Loss: 9.003984 | LR: 2.8541372909e-07
+Epoch 5 | Step 78 | Loss: 8.902103 | LR: 2.8541372909e-07
+Epoch 5 | Step 79 | Loss: 8.745197 | LR: 2.7485956488e-07
+Epoch 5 | Step 80 | Loss: 8.625310 | LR: 2.7485956488e-07
+Epoch 5 | Step 81 | Loss: 8.708197 | LR: 2.7485956488e-07
+Epoch 5 | Step 82 | Loss: 8.630608 | LR: 2.7485956488e-07
+Epoch 5 | Step 83 | Loss: 7.983984 | LR: 2.6446028641e-07
+Epoch 5 | Step 84 | Loss: 8.548100 | LR: 2.6446028641e-07
+Epoch 5 | Step 85 | Loss: 8.610752 | LR: 2.6446028641e-07
+Epoch 5 | Step 86 | Loss: 8.727546 | LR: 2.6446028641e-07
+Epoch 5 | Step 87 | Loss: 8.337125 | LR: 2.5421928364e-07
+Epoch 5 | Step 88 | Loss: 8.379196 | LR: 2.5421928364e-07
+Epoch 5 | Step 89 | Loss: 8.003982 | LR: 2.4413989489e-07
+Starting inference for epoch 5: compare_root=/root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/compare_audio, test=/root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch5
+Loading checkpoint: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/checkpoints/checkpoint-epoch-5
+You are attempting to use Flash Attention 2 without specifying a torch dtype. This might lead to unexpected behaviour
+===== Generating compare3 =====
+Generating: epoch5_seen_style.wav
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/compare_audio/epoch5_seen_style.wav
+Generating: epoch5_unseen_short.wav
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/compare_audio/epoch5_unseen_short.wav
+Generating: epoch5_unseen_long.wav
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/compare_audio/epoch5_unseen_long.wav
+===== Reading test20 =====
+===== Generating test20 =====
+[1/20] Generating test_010.wav: 我已经收到你的邮件了。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch5/test_010.wav
+[2/20] Generating test_020.wav: 这家餐厅的菜很好吃。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch5/test_020.wav
+[3/20] Generating test_030.wav: 我准备回宿舍休息。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch5/test_030.wav
+[4/20] Generating test_040.wav: 希望今天能够顺利完成全部训练任务。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch5/test_040.wav
+[5/20] Generating test_050.wav: 你觉得这个方案怎么样？
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch5/test_050.wav
+[6/20] Generating test_060.wav: 这个效果太自然了！
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch5/test_060.wav
+[7/20] Generating test_070.wav: 今天温度是二十八摄氏度。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch5/test_070.wav
+[8/20] Generating test_080.wav: 多模态模型可以同时处理图像和文字。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch5/test_080.wav
+[9/20] Generating test_090.wav: 今天开始新的实验。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch5/test_090.wav
+[10/20] Generating test_100.wav: 希望我们的实验取得成功。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch5/test_100.wav
+[11/20] Generating test_110.wav: 量化考核、薪酬与业绩挂钩的机制。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch5/test_110.wav
+[12/20] Generating test_120.wav: 他只称太太亦很信任他。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch5/test_120.wav
+[13/20] Generating test_130.wav: 能否重现亚特兰大奥运会上的辉煌？
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch5/test_130.wav
+[14/20] Generating test_140.wav: 你银行卡里竟然还有钱？
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch5/test_140.wav
+[15/20] Generating test_150.wav: 抹布也是很有用的哟！
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch5/test_150.wav
+[16/20] Generating test_160.wav: 有什么心事吗？可以和我分享一下呀。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch5/test_160.wav
+[17/20] Generating test_170.wav: 其余的是斑胸草雀和枫鸟等种类。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch5/test_170.wav
+[18/20] Generating test_180.wav: 父亲说他无钱为儿操办婚事，打算去卖肾。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch5/test_180.wav
+[19/20] Generating test_190.wav: 网民们是否普遍受到过流氓软件的骚扰呢？
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch5/test_190.wav
+[20/20] Generating test_200.wav: 岁月荏苒，人生易老。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch5/test_200.wav
+Compare directory: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/compare_audio
+Test directory: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch5
+Done.
+Epoch 5 verification: all_wav=23, compare=3, test=20
+Epoch 5 inference verified; checkpoint deleted: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/checkpoints/checkpoint-epoch-5
+Epoch 6 | Step 0 | Loss: 8.687771 | LR: 2.4413989489e-07
+Epoch 6 | Step 1 | Loss: 9.152962 | LR: 2.4413989489e-07
+Epoch 6 | Step 2 | Loss: 8.607719 | LR: 2.4413989489e-07
+Epoch 6 | Step 3 | Loss: 8.072446 | LR: 2.3422540586e-07
+Epoch 6 | Step 4 | Loss: 8.468321 | LR: 2.3422540586e-07
+Epoch 6 | Step 5 | Loss: 9.076868 | LR: 2.3422540586e-07
+Epoch 6 | Step 6 | Loss: 8.592909 | LR: 2.3422540586e-07
+Epoch 6 | Step 7 | Loss: 8.729649 | LR: 2.2447904844e-07
+Epoch 6 | Step 8 | Loss: 8.456234 | LR: 2.2447904844e-07
+Epoch 6 | Step 9 | Loss: 8.139484 | LR: 2.2447904844e-07
+Epoch 6 | Step 10 | Loss: 8.343926 | LR: 2.2447904844e-07
+Epoch 6 | Step 11 | Loss: 9.115892 | LR: 2.1490399976e-07
+Epoch 6 | Step 12 | Loss: 7.835770 | LR: 2.1490399976e-07
+Epoch 6 | Step 13 | Loss: 8.649019 | LR: 2.1490399976e-07
+Epoch 6 | Step 14 | Loss: 8.466040 | LR: 2.1490399976e-07
+Epoch 6 | Step 15 | Loss: 8.799876 | LR: 2.0550338106e-07
+Epoch 6 | Step 16 | Loss: 8.321733 | LR: 2.0550338106e-07
+Epoch 6 | Step 17 | Loss: 9.023026 | LR: 2.0550338106e-07
+Epoch 6 | Step 18 | Loss: 8.975183 | LR: 2.0550338106e-07
+Epoch 6 | Step 19 | Loss: 7.881866 | LR: 1.9628025675e-07
+Epoch 6 | Step 20 | Loss: 8.284600 | LR: 1.9628025675e-07
+Epoch 6 | Step 21 | Loss: 8.383341 | LR: 1.9628025675e-07
+Epoch 6 | Step 22 | Loss: 7.950278 | LR: 1.9628025675e-07
+Epoch 6 | Step 23 | Loss: 8.208011 | LR: 1.8723763338e-07
+Epoch 6 | Step 24 | Loss: 8.679533 | LR: 1.8723763338e-07
+Epoch 6 | Step 25 | Loss: 8.740707 | LR: 1.8723763338e-07
+Epoch 6 | Step 26 | Loss: 9.066973 | LR: 1.8723763338e-07
+Epoch 6 | Step 27 | Loss: 8.847882 | LR: 1.7837845865e-07
+Epoch 6 | Step 28 | Loss: 8.829320 | LR: 1.7837845865e-07
+Epoch 6 | Step 29 | Loss: 8.612299 | LR: 1.7837845865e-07
+Epoch 6 | Step 30 | Loss: 8.227618 | LR: 1.7837845865e-07
+Epoch 6 | Step 31 | Loss: 8.758930 | LR: 1.6970562047e-07
+Epoch 6 | Step 32 | Loss: 8.075126 | LR: 1.6970562047e-07
+Epoch 6 | Step 33 | Loss: 8.090711 | LR: 1.6970562047e-07
+Epoch 6 | Step 34 | Loss: 8.472802 | LR: 1.6970562047e-07
+Epoch 6 | Step 35 | Loss: 8.496794 | LR: 1.6122194599e-07
+Epoch 6 | Step 36 | Loss: 7.995149 | LR: 1.6122194599e-07
+Epoch 6 | Step 37 | Loss: 8.829020 | LR: 1.6122194599e-07
+Epoch 6 | Step 38 | Loss: 8.399769 | LR: 1.6122194599e-07
+Epoch 6 | Step 39 | Loss: 8.270428 | LR: 1.5293020072e-07
+Epoch 6 | Step 40 | Loss: 8.674519 | LR: 1.5293020072e-07
+Epoch 6 | Step 41 | Loss: 8.666679 | LR: 1.5293020072e-07
+Epoch 6 | Step 42 | Loss: 8.759045 | LR: 1.5293020072e-07
+Epoch 6 | Step 43 | Loss: 8.636363 | LR: 1.4483308759e-07
+Epoch 6 | Step 44 | Loss: 8.400448 | LR: 1.4483308759e-07
+Epoch 6 | Step 45 | Loss: 8.567575 | LR: 1.4483308759e-07
+Epoch 6 | Step 46 | Loss: 8.359125 | LR: 1.4483308759e-07
+Epoch 6 | Step 47 | Loss: 8.544513 | LR: 1.3693324608e-07
+Epoch 6 | Step 48 | Loss: 8.681753 | LR: 1.3693324608e-07
+Epoch 6 | Step 49 | Loss: 8.326772 | LR: 1.3693324608e-07
+Epoch 6 | Step 50 | Loss: 8.430228 | LR: 1.3693324608e-07
+Epoch 6 | Step 51 | Loss: 8.803469 | LR: 1.2923325138e-07
+Epoch 6 | Step 52 | Loss: 8.356451 | LR: 1.2923325138e-07
+Epoch 6 | Step 53 | Loss: 8.569652 | LR: 1.2923325138e-07
+Epoch 6 | Step 54 | Loss: 7.889098 | LR: 1.2923325138e-07
+Epoch 6 | Step 55 | Loss: 8.894306 | LR: 1.2173561353e-07
+Epoch 6 | Step 56 | Loss: 8.692528 | LR: 1.2173561353e-07
+Epoch 6 | Step 57 | Loss: 8.621222 | LR: 1.2173561353e-07
+Epoch 6 | Step 58 | Loss: 9.065598 | LR: 1.2173561353e-07
+Epoch 6 | Step 59 | Loss: 8.789631 | LR: 1.1444277659e-07
+Epoch 6 | Step 60 | Loss: 7.824415 | LR: 1.1444277659e-07
+Epoch 6 | Step 61 | Loss: 8.124743 | LR: 1.1444277659e-07
+Epoch 6 | Step 62 | Loss: 8.830456 | LR: 1.1444277659e-07
+Epoch 6 | Step 63 | Loss: 8.577652 | LR: 1.0735711787e-07
+Epoch 6 | Step 64 | Loss: 8.762182 | LR: 1.0735711787e-07
+Epoch 6 | Step 65 | Loss: 8.339140 | LR: 1.0735711787e-07
+Epoch 6 | Step 66 | Loss: 8.828924 | LR: 1.0735711787e-07
+Epoch 6 | Step 67 | Loss: 8.445744 | LR: 1.0048094716e-07
+Epoch 6 | Step 68 | Loss: 8.513315 | LR: 1.0048094716e-07
+Epoch 6 | Step 69 | Loss: 8.306893 | LR: 1.0048094716e-07
+Epoch 6 | Step 70 | Loss: 8.205352 | LR: 1.0048094716e-07
+Epoch 6 | Step 71 | Loss: 8.519123 | LR: 9.3816505936e-08
+Epoch 6 | Step 72 | Loss: 8.387145 | LR: 9.3816505936e-08
+Epoch 6 | Step 73 | Loss: 8.736866 | LR: 9.3816505936e-08
+Epoch 6 | Step 74 | Loss: 8.847099 | LR: 9.3816505936e-08
+Epoch 6 | Step 75 | Loss: 8.906881 | LR: 8.7365966665e-08
+Epoch 6 | Step 76 | Loss: 8.406374 | LR: 8.7365966665e-08
+Epoch 6 | Step 77 | Loss: 8.218414 | LR: 8.7365966665e-08
+Epoch 6 | Step 78 | Loss: 8.324761 | LR: 8.7365966665e-08
+Epoch 6 | Step 79 | Loss: 8.266030 | LR: 8.1131432088e-08
+Epoch 6 | Step 80 | Loss: 8.501955 | LR: 8.1131432088e-08
+Epoch 6 | Step 81 | Loss: 8.776315 | LR: 8.1131432088e-08
+Epoch 6 | Step 82 | Loss: 8.439185 | LR: 8.1131432088e-08
+Epoch 6 | Step 83 | Loss: 8.900145 | LR: 7.5114934532e-08
+Epoch 6 | Step 84 | Loss: 8.901461 | LR: 7.5114934532e-08
+Epoch 6 | Step 85 | Loss: 8.614700 | LR: 7.5114934532e-08
+Epoch 6 | Step 86 | Loss: 8.145231 | LR: 7.5114934532e-08
+Epoch 6 | Step 87 | Loss: 8.867000 | LR: 6.9318435247e-08
+Epoch 6 | Step 88 | Loss: 7.954532 | LR: 6.9318435247e-08
+Epoch 6 | Step 89 | Loss: 8.499252 | LR: 6.3743823769e-08
+Starting inference for epoch 6: compare_root=/root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/compare_audio, test=/root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch6
+Loading checkpoint: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/checkpoints/checkpoint-epoch-6
+You are attempting to use Flash Attention 2 without specifying a torch dtype. This might lead to unexpected behaviour
+===== Generating compare3 =====
+Generating: epoch6_seen_style.wav
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/compare_audio/epoch6_seen_style.wav
+Generating: epoch6_unseen_short.wav
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/compare_audio/epoch6_unseen_short.wav
+Generating: epoch6_unseen_long.wav
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/compare_audio/epoch6_unseen_long.wav
+===== Reading test20 =====
+===== Generating test20 =====
+[1/20] Generating test_010.wav: 我已经收到你的邮件了。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch6/test_010.wav
+[2/20] Generating test_020.wav: 这家餐厅的菜很好吃。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch6/test_020.wav
+[3/20] Generating test_030.wav: 我准备回宿舍休息。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch6/test_030.wav
+[4/20] Generating test_040.wav: 希望今天能够顺利完成全部训练任务。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch6/test_040.wav
+[5/20] Generating test_050.wav: 你觉得这个方案怎么样？
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch6/test_050.wav
+[6/20] Generating test_060.wav: 这个效果太自然了！
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch6/test_060.wav
+[7/20] Generating test_070.wav: 今天温度是二十八摄氏度。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch6/test_070.wav
+[8/20] Generating test_080.wav: 多模态模型可以同时处理图像和文字。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch6/test_080.wav
+[9/20] Generating test_090.wav: 今天开始新的实验。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch6/test_090.wav
+[10/20] Generating test_100.wav: 希望我们的实验取得成功。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch6/test_100.wav
+[11/20] Generating test_110.wav: 量化考核、薪酬与业绩挂钩的机制。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch6/test_110.wav
+[12/20] Generating test_120.wav: 他只称太太亦很信任他。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch6/test_120.wav
+[13/20] Generating test_130.wav: 能否重现亚特兰大奥运会上的辉煌？
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch6/test_130.wav
+[14/20] Generating test_140.wav: 你银行卡里竟然还有钱？
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch6/test_140.wav
+[15/20] Generating test_150.wav: 抹布也是很有用的哟！
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch6/test_150.wav
+[16/20] Generating test_160.wav: 有什么心事吗？可以和我分享一下呀。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch6/test_160.wav
+[17/20] Generating test_170.wav: 其余的是斑胸草雀和枫鸟等种类。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch6/test_170.wav
+[18/20] Generating test_180.wav: 父亲说他无钱为儿操办婚事，打算去卖肾。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch6/test_180.wav
+[19/20] Generating test_190.wav: 网民们是否普遍受到过流氓软件的骚扰呢？
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch6/test_190.wav
+[20/20] Generating test_200.wav: 岁月荏苒，人生易老。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch6/test_200.wav
+Compare directory: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/compare_audio
+Test directory: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch6
+Done.
+Epoch 6 verification: all_wav=23, compare=3, test=20
+Epoch 6 inference verified; checkpoint deleted: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/checkpoints/checkpoint-epoch-6
+Epoch 7 | Step 0 | Loss: 8.120024 | LR: 6.3743823769e-08
+Epoch 7 | Step 1 | Loss: 8.402685 | LR: 6.3743823769e-08
+Epoch 7 | Step 2 | Loss: 8.445777 | LR: 6.3743823769e-08
+Epoch 7 | Step 3 | Loss: 8.113173 | LR: 5.8392917306e-08
+Epoch 7 | Step 4 | Loss: 8.182496 | LR: 5.8392917306e-08
+Epoch 7 | Step 5 | Loss: 8.386560 | LR: 5.8392917306e-08
+Epoch 7 | Step 6 | Loss: 8.495277 | LR: 5.8392917306e-08
+Epoch 7 | Step 7 | Loss: 8.738310 | LR: 5.3267460137e-08
+Epoch 7 | Step 8 | Loss: 8.449916 | LR: 5.3267460137e-08
+Epoch 7 | Step 9 | Loss: 8.894192 | LR: 5.3267460137e-08
+Epoch 7 | Step 10 | Loss: 8.579522 | LR: 5.3267460137e-08
+Epoch 7 | Step 11 | Loss: 8.098745 | LR: 4.8369123056e-08
+Epoch 7 | Step 12 | Loss: 8.614790 | LR: 4.8369123056e-08
+Epoch 7 | Step 13 | Loss: 8.918204 | LR: 4.8369123056e-08
+Epoch 7 | Step 14 | Loss: 8.456130 | LR: 4.8369123056e-08
+Epoch 7 | Step 15 | Loss: 8.294479 | LR: 4.3699502815e-08
+Epoch 7 | Step 16 | Loss: 8.400625 | LR: 4.3699502815e-08
+Epoch 7 | Step 17 | Loss: 8.666104 | LR: 4.3699502815e-08
+Epoch 7 | Step 18 | Loss: 8.931134 | LR: 4.3699502815e-08
+Epoch 7 | Step 19 | Loss: 8.427307 | LR: 3.9260121613e-08
+Epoch 7 | Step 20 | Loss: 8.919395 | LR: 3.9260121613e-08
+Epoch 7 | Step 21 | Loss: 8.224947 | LR: 3.9260121613e-08
+Epoch 7 | Step 22 | Loss: 8.947001 | LR: 3.9260121613e-08
+Epoch 7 | Step 23 | Loss: 7.940619 | LR: 3.5052426594e-08
+Epoch 7 | Step 24 | Loss: 8.520298 | LR: 3.5052426594e-08
+Epoch 7 | Step 25 | Loss: 8.729630 | LR: 3.5052426594e-08
+Epoch 7 | Step 26 | Loss: 8.300000 | LR: 3.5052426594e-08
+Epoch 7 | Step 27 | Loss: 8.796595 | LR: 3.1077789377e-08
+Epoch 7 | Step 28 | Loss: 8.164557 | LR: 3.1077789377e-08
+Epoch 7 | Step 29 | Loss: 8.393312 | LR: 3.1077789377e-08
+Epoch 7 | Step 30 | Loss: 8.741634 | LR: 3.1077789377e-08
+Epoch 7 | Step 31 | Loss: 8.815035 | LR: 2.7337505611e-08
+Epoch 7 | Step 32 | Loss: 8.894665 | LR: 2.7337505611e-08
+Epoch 7 | Step 33 | Loss: 7.790196 | LR: 2.7337505611e-08
+Epoch 7 | Step 34 | Loss: 8.801247 | LR: 2.7337505611e-08
+Epoch 7 | Step 35 | Loss: 8.961729 | LR: 2.3832794548e-08
+Epoch 7 | Step 36 | Loss: 8.068791 | LR: 2.3832794548e-08
+Epoch 7 | Step 37 | Loss: 8.787064 | LR: 2.3832794548e-08
+Epoch 7 | Step 38 | Loss: 9.133523 | LR: 2.3832794548e-08
+Epoch 7 | Step 39 | Loss: 8.273413 | LR: 2.0564798651e-08
+Epoch 7 | Step 40 | Loss: 8.883295 | LR: 2.0564798651e-08
+Epoch 7 | Step 41 | Loss: 8.243086 | LR: 2.0564798651e-08
+Epoch 7 | Step 42 | Loss: 7.594866 | LR: 2.0564798651e-08
+Epoch 7 | Step 43 | Loss: 8.187465 | LR: 1.7534583217e-08
+Epoch 7 | Step 44 | Loss: 8.816934 | LR: 1.7534583217e-08
+Epoch 7 | Step 45 | Loss: 8.619040 | LR: 1.7534583217e-08
+Epoch 7 | Step 46 | Loss: 8.980911 | LR: 1.7534583217e-08
+Epoch 7 | Step 47 | Loss: 8.664936 | LR: 1.4743136033e-08
+Epoch 7 | Step 48 | Loss: 8.337646 | LR: 1.4743136033e-08
+Epoch 7 | Step 49 | Loss: 8.189317 | LR: 1.4743136033e-08
+Epoch 7 | Step 50 | Loss: 8.473462 | LR: 1.4743136033e-08
+Epoch 7 | Step 51 | Loss: 8.740862 | LR: 1.2191367051e-08
+Epoch 7 | Step 52 | Loss: 8.592923 | LR: 1.2191367051e-08
+Epoch 7 | Step 53 | Loss: 8.444504 | LR: 1.2191367051e-08
+Epoch 7 | Step 54 | Loss: 8.847927 | LR: 1.2191367051e-08
+Epoch 7 | Step 55 | Loss: 8.550616 | LR: 9.8801080939e-09
+Epoch 7 | Step 56 | Loss: 8.729954 | LR: 9.8801080939e-09
+Epoch 7 | Step 57 | Loss: 8.915777 | LR: 9.8801080939e-09
+Epoch 7 | Step 58 | Loss: 8.726674 | LR: 9.8801080939e-09
+Epoch 7 | Step 59 | Loss: 8.483746 | LR: 7.8101125833e-09
+Epoch 7 | Step 60 | Loss: 8.349703 | LR: 7.8101125833e-09
+Epoch 7 | Step 61 | Loss: 8.499796 | LR: 7.8101125833e-09
+Epoch 7 | Step 62 | Loss: 8.689877 | LR: 7.8101125833e-09
+Epoch 7 | Step 63 | Loss: 8.334328 | LR: 5.9820552940e-09
+Epoch 7 | Step 64 | Loss: 8.869751 | LR: 5.9820552940e-09
+Epoch 7 | Step 65 | Loss: 8.175409 | LR: 5.9820552940e-09
+Epoch 7 | Step 66 | Loss: 7.739456 | LR: 5.9820552940e-09
+Epoch 7 | Step 67 | Loss: 8.694966 | LR: 4.3965321342e-09
+Epoch 7 | Step 68 | Loss: 8.431944 | LR: 4.3965321342e-09
+Epoch 7 | Step 69 | Loss: 7.636731 | LR: 4.3965321342e-09
+Epoch 7 | Step 70 | Loss: 8.272451 | LR: 4.3965321342e-09
+Epoch 7 | Step 71 | Loss: 9.017193 | LR: 3.0540599509e-09
+Epoch 7 | Step 72 | Loss: 8.699919 | LR: 3.0540599509e-09
+Epoch 7 | Step 73 | Loss: 8.551057 | LR: 3.0540599509e-09
+Epoch 7 | Step 74 | Loss: 8.192652 | LR: 3.0540599509e-09
+Epoch 7 | Step 75 | Loss: 8.538072 | LR: 1.9550763615e-09
+Epoch 7 | Step 76 | Loss: 8.630224 | LR: 1.9550763615e-09
+Epoch 7 | Step 77 | Loss: 8.655478 | LR: 1.9550763615e-09
+Epoch 7 | Step 78 | Loss: 8.533346 | LR: 1.9550763615e-09
+Epoch 7 | Step 79 | Loss: 8.924064 | LR: 1.0999396117e-09
+Epoch 7 | Step 80 | Loss: 8.328753 | LR: 1.0999396117e-09
+Epoch 7 | Step 81 | Loss: 7.965201 | LR: 1.0999396117e-09
+Epoch 7 | Step 82 | Loss: 8.548382 | LR: 1.0999396117e-09
+Epoch 7 | Step 83 | Loss: 8.870537 | LR: 4.8892845774e-10
+Epoch 7 | Step 84 | Loss: 9.045019 | LR: 4.8892845774e-10
+Epoch 7 | Step 85 | Loss: 9.042179 | LR: 4.8892845774e-10
+Epoch 7 | Step 86 | Loss: 8.488249 | LR: 4.8892845774e-10
+Epoch 7 | Step 87 | Loss: 8.825109 | LR: 1.2224207652e-10
+Epoch 7 | Step 88 | Loss: 8.381307 | LR: 1.2224207652e-10
+Epoch 7 | Step 89 | Loss: 8.343077 | LR: 0.0000000000e+00
+Starting inference for epoch 7: compare_root=/root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/compare_audio, test=/root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch7
+Loading checkpoint: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/checkpoints/checkpoint-epoch-7
+You are attempting to use Flash Attention 2 without specifying a torch dtype. This might lead to unexpected behaviour
+===== Generating compare3 =====
+Generating: epoch7_seen_style.wav
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/compare_audio/epoch7_seen_style.wav
+Generating: epoch7_unseen_short.wav
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/compare_audio/epoch7_unseen_short.wav
+Generating: epoch7_unseen_long.wav
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/compare_audio/epoch7_unseen_long.wav
+===== Reading test20 =====
+===== Generating test20 =====
+[1/20] Generating test_010.wav: 我已经收到你的邮件了。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch7/test_010.wav
+[2/20] Generating test_020.wav: 这家餐厅的菜很好吃。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch7/test_020.wav
+[3/20] Generating test_030.wav: 我准备回宿舍休息。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch7/test_030.wav
+[4/20] Generating test_040.wav: 希望今天能够顺利完成全部训练任务。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch7/test_040.wav
+[5/20] Generating test_050.wav: 你觉得这个方案怎么样？
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch7/test_050.wav
+[6/20] Generating test_060.wav: 这个效果太自然了！
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch7/test_060.wav
+[7/20] Generating test_070.wav: 今天温度是二十八摄氏度。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch7/test_070.wav
+[8/20] Generating test_080.wav: 多模态模型可以同时处理图像和文字。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch7/test_080.wav
+[9/20] Generating test_090.wav: 今天开始新的实验。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch7/test_090.wav
+[10/20] Generating test_100.wav: 希望我们的实验取得成功。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch7/test_100.wav
+[11/20] Generating test_110.wav: 量化考核、薪酬与业绩挂钩的机制。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch7/test_110.wav
+[12/20] Generating test_120.wav: 他只称太太亦很信任他。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch7/test_120.wav
+[13/20] Generating test_130.wav: 能否重现亚特兰大奥运会上的辉煌？
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch7/test_130.wav
+[14/20] Generating test_140.wav: 你银行卡里竟然还有钱？
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch7/test_140.wav
+[15/20] Generating test_150.wav: 抹布也是很有用的哟！
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch7/test_150.wav
+[16/20] Generating test_160.wav: 有什么心事吗？可以和我分享一下呀。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch7/test_160.wav
+[17/20] Generating test_170.wav: 其余的是斑胸草雀和枫鸟等种类。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch7/test_170.wav
+[18/20] Generating test_180.wav: 父亲说他无钱为儿操办婚事，打算去卖肾。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch7/test_180.wav
+[19/20] Generating test_190.wav: 网民们是否普遍受到过流氓软件的骚扰呢？
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch7/test_190.wav
+[20/20] Generating test_200.wav: 岁月荏苒，人生易老。
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Saved: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch7/test_200.wav
+Compare directory: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/compare_audio
+Test directory: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/results/test20/epoch7
+Done.
+Epoch 7 verification: all_wav=23, compare=3, test=20
+Epoch 7 inference verified; checkpoint deleted: /root/autodl-tmp/qwen3tts/ref031_cosine_8ep_seed42_20260730/hparam_runs/C_lr1.5e-6_cosine8_ref031_seed42/checkpoints/checkpoint-epoch-7
