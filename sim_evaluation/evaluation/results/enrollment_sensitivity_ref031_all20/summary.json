@@ -1,0 +1,83 @@
+{
+  "candidate_count": 10,
+  "combination_count": 120,
+  "sample_count_per_system": 20,
+  "best": {
+    "enrollment_1": "060.wav",
+    "enrollment_2": "080.wav",
+    "enrollment_3": "090.wav",
+    "zero_shot_mean": 0.6955629208778662,
+    "sft_mean": 0.6372994425998724,
+    "sft_minus_zero": -0.05826347827799383,
+    "rank": 1,
+    "zero_change_vs_010_020_030": -0.03227713022987533
+  },
+  "original": {
+    "enrollment_1": "010.wav",
+    "enrollment_2": "020.wav",
+    "enrollment_3": "030.wav",
+    "zero_shot_mean": 0.7278400511077415,
+    "sft_mean": 0.6951069773555556,
+    "sft_minus_zero": -0.032733073752185926,
+    "rank": 96,
+    "zero_change_vs_010_020_030": 0.0
+  },
+  "original_rank": 96,
+  "zero_score_range": {
+    "min": 0.6955629208778662,
+    "median": 0.7191796872132068,
+    "max": 0.7416895178605317
+  },
+  "top5": [
+    {
+      "enrollment_1": "060.wav",
+      "enrollment_2": "080.wav",
+      "enrollment_3": "090.wav",
+      "zero_shot_mean": 0.6955629208778662,
+      "sft_mean": 0.6372994425998724,
+      "sft_minus_zero": -0.05826347827799383,
+      "rank": 1,
+      "zero_change_vs_010_020_030": -0.03227713022987533
+    },
+    {
+      "enrollment_1": "080.wav",
+      "enrollment_2": "090.wav",
+      "enrollment_3": "100.wav",
+      "zero_shot_mean": 0.7005676981226597,
+      "sft_mean": 0.643603868576804,
+      "sft_minus_zero": -0.05696382954585577,
+      "rank": 2,
+      "zero_change_vs_010_020_030": -0.027272352985081794
+    },
+    {
+      "enrollment_1": "060.wav",
+      "enrollment_2": "090.wav",
+      "enrollment_3": "100.wav",
+      "zero_shot_mean": 0.702111417643727,
+      "sft_mean": 0.6427116161384919,
+      "sft_minus_zero": -0.05939980150523505,
+      "rank": 3,
+      "zero_change_vs_010_020_030": -0.02572863346401455
+    },
+    {
+      "enrollment_1": "020.wav",
+      "enrollment_2": "080.wav",
+      "enrollment_3": "090.wav",
+      "zero_shot_mean": 0.7027479563659003,
+      "sft_mean": 0.6471615599326904,
+      "sft_minus_zero": -0.05558639643320984,
+      "rank": 4,
+      "zero_change_vs_010_020_030": -0.025092094741841264
+    },
+    {
+      "enrollment_1": "070.wav",
+      "enrollment_2": "080.wav",
+      "enrollment_3": "090.wav",
+      "zero_shot_mean": 0.702939634019273,
+      "sft_mean": 0.6580849597331357,
+      "sft_minus_zero": -0.04485467428613721,
+      "rank": 5,
+      "zero_change_vs_010_020_030": -0.024900417088468574
+    }
+  ]
+}

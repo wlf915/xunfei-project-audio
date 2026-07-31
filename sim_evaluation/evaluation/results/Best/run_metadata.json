@@ -1,0 +1,21 @@
+{
+  "created_at_utc": "2026-07-31T03:45:20.591629+00:00",
+  "hparam_root": "C:\\Users\\26686\\Desktop\\ref031_cosine_8ep_seed42_20260730\\ref031_cosine_8ep_seed42_20260730\\hparam_runs",
+  "enrollment_dir": "E:\\xunfei-project-audio\\sim_evaluation\\evaluation\\data\\enrollment",
+  "enrollment_files": [
+    "010.wav",
+    "050.wav",
+    "070.wav"
+  ],
+  "zero_shot_dir": "E:\\xunfei-project-audio\\sim_evaluation\\evaluation\\data\\generated\\zero_shot",
+  "zero_shot_reference_audio": "001.wav",
+  "sft_reference_audio": "031.wav (inferred from run directory names)",
+  "model_id": "iic/speech_eres2netv2_sv_zh-cn_16k-common",
+  "local_model_path": "D:\\modelscope-cache\\models\\iic--speech_eres2netv2_sv_zh-cn_16k-common\\snapshots\\master",
+  "device": "cuda:0",
+  "candidate_count": 24,
+  "samples_per_condition": 20,
+  "enrollment_count": 3,
+  "aggregation": "For each generated sample, cosine similarity is averaged across the three enrollment embeddings; condition SIM is the mean across 20 generated samples.",
+  "selection_caveat": "Enrollment 010/050/070 was chosen after reviewing similarity behavior. Treat this output as sensitivity analysis rather than an unbiased primary comparison."
+}
